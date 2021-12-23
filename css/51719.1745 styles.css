@@ -1,0 +1,11 @@
+/* * declaring font family for body */
+body {
+	/* font-family: 'Alfa Slab One', cursive; */
+	font-family: 'Roboto Slab', serif;
+}
+
+/* * declaring weight, not italic */
+body {
+	font-weight: 500;
+	font-style: normal;
+}

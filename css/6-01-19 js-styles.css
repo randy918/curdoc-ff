@@ -1,0 +1,153 @@
+/* * 60119.0858 official version */
+
+/*! this is typical DEFAULT CSS */
+* {
+  margin: 0;
+  paddinh9: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* font-family: 'Alfa Slab One', cursive; */
+  font-family: 'Roboto Slab', serif;
+  /* font-family: 'Helvetica'; */
+}
+
+/*! end of DEFAULT CSS */
+
+/*! START CUSTOM CSS */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+h1 {
+  font-family: 'Helvetica', sans-serif;
+  color: white;
+}
+
+p {
+  font-family: 'Helvetica', sans-serif;
+  color: yellow;
+}
+
+/* * declaring weight, not italic */
+/* body {
+	background-color: #333;
+	font-weight: 900;
+	font-style: normal;
+	/* margin: 0; */
+/* }
+
+* { */
+	/* margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+/* } */
+
+ul {font-size: 7vh;
+}
+
+/* * actual beginning */
+/* selectors */
+/* * 52419.2116  */
+
+.colors {
+  background: red;
+  color: white;
+}
+
+
+.special {
+  background: red;
+  color: white;
+}
+
+.special2 {
+  background: blue;
+  color: white;
+}
+
+.text {
+  font-size: 2rem;
+  letter-spacing: 1rem;
+}
+
+
+
+/* master-styler box-based---------------- align-items: center;
+
+background-attachment: fixed; // position
+background-blend-mode: xxx;
+background-position: bottom;
+background-position: center;
+background-position: left;
+background-position: right;
+background-position: top;
+background-repeat: no-repeat;
+background-repeat: repeat;
+background-repeat: repeat-x;
+background-repeat: repeat-y;
+background-repeat: round; //stretches to whole pic
+background-repeat: space;
+background-size: cover;
+background-size: contain;
+
+border-bottom: xxx;
+border-color: xxx;
+border-left: xxx;
+border: 0.2vh solid #222;
+border-radius: border-bottom-left-radius: 000;
+border-bottom-right-radius: 000;
+border-top-left-radius: 000;
+border-top-right-radius: 000;
+border-right: xxx;
+border-style: hidden;
+border-style: solid;
+border-style: none;
+border-top: 000;
+border-width: 000;
+
+box-sizing: border-box // makes padding inset, not outset
+
+display: flex;
+display: none;
+taken out totally,
+takes no space justify-content: center;
+
+margin: 0 auto;
+this is to center margin-bottom: 000;
+margin-left: 000;
+margin-right: 000;
+margin-top: 000;
+
+min-height: 000;
+
+opacity: 0; // 0 - 1 percentage
+
+outline-color: 000;
+outline-offset: 000;
+unique to outline outline-style: 000;
+outline-width: 000;
+outline: 0.2vh solid #222;
+
+padding: 000;
+padding-bottom: 000;
+padding-left: 000;
+padding-right: 000;
+padding-top: 000;
+
+visibility: hidden;
+element just not seen,still there
+
+
+ */

@@ -1,0 +1,117 @@
+/* * declaring font family for body */
+body {
+	/* font-family: 'Alfa Slab One', cursive; */
+	font-family: 'Roboto Slab', serif;
+	/* font-family: 'Helvetica'; */
+}
+
+h1 {
+	font-family: 'Helvetica', sans-serif;
+}
+
+/* * declaring weight, not italic */
+body {
+	background-color: #333;
+	font-weight: 900;
+	font-style: normal;
+	/* margin: 0; */
+}
+
+/* * actual beginning */
+/* selectors */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+}
+
+div {
+	min-height: 100vh;
+	color: white;
+}
+
+.big {
+	background: url("/images/5-06-19c\ hand\ stwo\ shutterstock_791463919.jpg");
+	background-size: cover;
+}
+
+/* master-styler font-based 51719.1820
+
+  background-color: xxx;
+  color: xxx;
+  font-family: xxx;
+  font-size: rem;
+  font-style: xxx;
+  font-weight: xxx;
+  letter-spacing: xxx;
+  line-height: 000;
+  text-align: center;
+  text-align: justify;
+  text-align: left;
+  text-align: right;
+  text-indent: 000;
+  text-shadow: xxx;
+  text-transform: capitalize;
+  text-transform: lowercase;
+  text-transform: uppercase;
+  text-transform: none;
+  width: 000;
+  word-spacing: 000;
+
+master-styler box-based----------------
+
+background-blend-mode: xxx;
+background-position: bottom;
+background-position: center;
+background-position: left;
+background-position: right;
+background-position: top;
+background-repeat: no-repeat;
+background-repeat: repeat;
+background-repeat: repeat-x;
+background-repeat: repeat-y;
+background-repeat: round; //stretches to whole pic
+background-repeat: space;
+background-size: cover;
+background-size: contain;
+
+border-bottom: xxx;
+border-color: xxx;
+border-left: xxx;
+border: 0.2vh solid #222;
+border-radius:
+border-bottom-left-radius: 000;
+border-bottom-right-radius: 000;
+border-top-left-radius: 000;
+border-top-right-radius: 000;
+border-right: xxx;
+border-style: hidden;
+border-style: solid;
+border-style: none;
+border-top: 000;
+border-width: 000;
+
+margin: 0 auto;   this is to center
+margin-bottom: 000;
+margin-left: 000;
+margin-right: 000;
+margin-top: 000;
+
+outline-color: 000;
+outline-offset: 000;   unique to outline
+outline-style: 000;
+outline-width: 000;
+outline: 0.2vh solid #222;
+
+padding: 000;
+padding-bottom: 000;
+padding-left: 000;
+padding-right: 000;
+padding-top: 000;
+
+
+ */

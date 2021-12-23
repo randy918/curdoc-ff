@@ -1,0 +1,461 @@
+/*  60219.1721  official version */
+
+/*!  DEFAULT CSS */
+
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* background: #666; */
+} */
+
+body {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 900;
+  font-size: 3vh;
+}
+
+/*! DEFAULT CSS VARIABLES */  looks like only one :root allowed
+
+/* :root {
+  --color1:#38ca55;
+  --color2:#ffae50;
+  --color3:#39414a;
+  --color4:#999;
+  --mainTransition: all 0.4s linear;
+} */
+
+/*! end of DEFAULT CSS */---------------------------------------------------------
+
+/*! START CUSTOM CSS */
+
+.heading {
+  color: #f15025;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*! end of CUSTOM CSS */
+
+/*ANIMATION, not just beginning to end, has many way points
+.animation {
+  background: blue;
+  /* animation-name: move; /* note move name in keyframes */
+  /* animation-duration: 10s; */
+  /* animation-iteration-count: 2; 
+  animation: move 5s infinite;
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(20x)
+  }
+
+  50% {
+    transform: translateX(100px);
+    background: red;
+  }
+
+  75% {
+    transform: translateX(-200px);
+    background: yellow;
+  }
+
+  100% {
+    transform: translateX(20px);
+    background: green;
+  }
+div {
+  width: 200px;
+  height: 100px;
+  color: white;
+  padding: 1vh;
+  margin: 10px;
+}
+
+.animation {
+  background: blue;
+  animation: move 5s 2;  // 5 seconds, 2 times
+  animation-fill-mode: forwards; // this leaves the graphics where it was
+}
+@keyframes move {
+  0% {
+    opacity: 0%;
+  }
+
+  25% {
+    transform: translateX(200px);
+    opacity: 0.25;
+  }
+
+  50% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(200px);
+    opacity: 0.5;
+  }
+}
+
+ .banner {
+  border: 5px solid red;
+  padding: 2vw;
+}
+
+.one {
+  float: right;
+} + 
+.two {
+  float: left;
+  height: 300px;
+} */
+
+/* * declaring weight, not italic */
+      /* body {
+	background-color: #333;
+	font-weight: 900;
+	font-style: normal;
+	/* margin: 0; */
+/* }
+
+* { */
+	/* margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+/* } */
+
+/* ul {font-size: 7vh;
+} */
+
+/* * actual beginning */
+/* selectors */
+/* * 52419.2116  */
+
+/* div {
+  width: 25vw;
+  height: 25vh;
+} */
+  
+/* master-styler font-based 51719.1820
+
+  background-color: xxx;
+  color: xxx;
+  font-family: xxx;
+  font-size: rem;
+  font-style: xxx;
+  font-weight: xxx;
+  letter-spacing: xxx;
+  line-height: 000;
+  text-align: center;
+  text-align: justify;
+  text-align: left;
+  text-align: right;
+  text-indent: 000;
+  text-shadow: xxx;
+  text-transform: capitalize;
+  text-transform: lowercase;
+  text-transform: uppercase;
+  text-transform: none;
+  width: 000;
+  word-spacing: 000;
+
+/* master-styler box-based---------------- align-items: center;
+
+background-attachment: fixed; // stays in single device position, does not scroll
+ background: linear-gradient(rgba(255, 0, 0, 0.5), rgba(0, 0, 255, 0.5)),
+ url("/images/other.jpg");
+background: linear-gradient(blue, red);
+background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9));
+background: linear-gradient(to top, blue, red);
+background: linear-gradient(to left, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9));
+background: linear-gradient(150deg, blue, red);
+
+background-blend-mode: xxx;
+background-position: bottom;
+background-position: center; // IMPORTANT BEST CHOICE
+background-position: left;
+background-position: right;
+background-position: top;
+background-position: 0, 0;  
+background-position: 20%, 10%;  
+background-repeat: no-repeat;  // IMPORTANT BEST CHOICE
+background-repeat: repeat;
+background-repeat: repeat-x;
+background-repeat: repeat-y;
+background-repeat: round; //stretches to whole pic
+background-repeat: space;
+background-size: cover; // IMPORTANT BEST CHOICE
+background-size: contain;
+
+border-bottom: xxx;
+border-color: xxx;
+border-left: xxx;
+border: 0.2vh solid #222;
+border: 5px solid red;
+
+border-radius: border-bottom-left-radius: 000;
+border-bottom-right-radius: 000;
+border-top-left-radius: 000;
+border-top-right-radius: 000;
+border-right: xxx;
+border-style: hidden;
+border-style: solid;
+border-style: none;
+border-top: 000;
+border-width: 000;
+
+box-sizing: border-box // makes padding inset, not outset
+
+CSS VARIABLES
+
+:root { // global---root is global
+  --color1: #38ca55;
+  --color2: #ffae50;
+  --color3: #39414a;
+  --color4: #999;
+  --mainTransition: all 0.4s linear;
+}
+--varName:valueKind
+property:var(--varName)
+:root{} === global
+element ===local
+:root {
+  --basicColor: #f15025; //doubledash indicates the variable--BEING NAMED
+}
+.heading {
+  color: var(--basicColor)
+}
+.heading {
+  color: var(--color1);
+}
+.second-heading {
+  color: var(--color2);
+  transition: var(--mainTransition);
+}
+.second-heading:hover {
+  color: var(--color1);
+}
+
+
+
+DESCENDANT AND CHILD COMBINATORS--children are more indirect that specific pointers
+.header h1 {
+  color: green;
+}
+
+div h1 {
+  color: red;
+}
+
+div>h1 {
+  color: blue;
+}
+
+
+display: flex;
+display: none; taken out totally, takes no space 
+justify-content: center;
+display: block CAN GET RID OF WHITE Margin under photos
+
+FIRST LINE / FIRST LETTER  // work easy
+p::first-line {
+  font-size: 12vh;
+}
+p::first-letter {
+  color: red;
+}
+
+
+float: left;
+clear: left: //float and clear should BOTH be same sides, like left here)
+float: right;
+
+HOVER  single colon
+p:hover {
+  font-size: 4vw;
+}
+a:hover {
+  text-decoration: none;
+
+  LINK PSEUDO SELECTOR
+  a:link {
+    color: aqua;
+  }
+  a:visited {
+    color: red;
+  }
+  a:hover {
+    color: aqua;
+  }
+  a:active {
+    color: aqua;
+  }
+  
+this is to center margin-bottom: 000;
+margin-left: 000;
+margin-right: 000;
+margin-top: 000;
+
+min-height: 000;
+
+opacity: 0; // 0 - 1 percentage
+
+outline-color: 000;
+outline-offset: 000;
+unique to outline outline-style: 000;
+outline-width: 000;
+outline: 0.2vh solid #222;
+
+padding: 000;
+padding-bottom: 000;
+padding-left: 000;
+padding-right: 000;
+padding-top: 000;
+
+position: static
+position: relative
+top: 5vh;
+left: 5vh;
+bottom: 5vh;
+right: 5vh;
+position: absolute; //absolute to the last parent that has location info
+--from position: RELATIVE PARENT, for example--as in "Absolute to someone above thats position: relative
+top: 50%;
+right: 0;
+button {
+  position: fixed;
+  top: 0;
+  right: 0;
+or... a parent is 'absolute' and children are all relative and shifted around  
+
+PSUEDO ELEMENTS BEFORE AND AFTER --------------------
+p::before {
+  content: "hello ";   places "hello" before the tag value (the text)
+}
+p::after {   //can use others css attributes too
+  content: "hello ";   places "hello" after the tag value (the text)
+}
+div::before {--causes motion and fading
+  content: "";
+  border: 2px solid red;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  box-sizing: border-box;
+  top: -40px;
+  left: -40px;
+  z-index: -2;
+  transition: all 0.5s linear;
+}
+
+div::after {
+  content: "";
+  /* border: 2px solid red; */
+  /* background: grey;
+  transition: all 0.5s linear;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  box-sizing: border-box;
+  top: -20px;
+  left: -20px;
+  z-index: -1; 
+  /* }  */
+/* div:hover::after,
+div:hover::before {
+  top: 0;
+  left: 0; 
+  div:hover {
+    background: coral;
+  }
+
+
+
+  PSEUDO CLASSES */
+
+
+
+
+  /* RESPONSIVE RELATED  
+
+min-width:    make sure you override completely, not have stray ones
+max-width:
+@media screen and (min-width: 576px) { //spacing needs to be PERFECT
+  change css;
+}
+@media screen and (max-width: 576px) { //spacing needs to be PERFECT
+  change css;
+}
+
+ visibility: hidden;
+element just not seen,still there 
+
+z-index
+ z-index: 4;   can be negative values, all relative
+ does not work wih position: static; only position: relative; position: absolute;
+
+ROOT ELEMENT OF DOCUMENT single COLON look up link here
+
+TRANSITIONS
+
+transform: translateX(20px);
+transform: translateY(20px);
+transform: translate(90px, 56px); // x y move
+transform: scaleX(1); % of original
+transform: scaleY(2); % of original
+transform: scale(1, 2); // x y scale
+transform: rotate(56deg); // z rotate
+transform: rotateZ(56deg); // z rotate, same as no Z
+transform: rotateX(56deg); // x rotate, equals vertical rotation
+transform: rotateY(56deg); // y rotate, equals vertical rotation
+transform: skew(-20deg):  same as skewX
+transform: skewX(-20deg)
+transform: skewY(-20deg)
+
+TRANSITION OVER TIME
+
+transition-property: background;
+transition-duration: 4s;
+transition-delay: 3s;
+
+ .three {
+   background: blue;
+   transition-property: background, border-radius; 
+   transition-duration: 4s, 2s;  // corresponding durations to above
+  .three {
+    background: blue;
+    transition: background 3s 2s, border-radius 5s 1s; shorthand,
+  what is changing plus how long plus delay, list of them IMPORTANT
+ .three {
+   background: blue;
+   transition: all 3s 2s; // all properties are used here
+ }
+ div {
+   width: 150px;
+   height: 150px;
+   background: blue;
+   margin: 15px;
+   padding: 20px;
+   color: white;
+   transition: all 1s;
+ }
+
+ div:hover {
+   transform: translateX(30vh);
+ }
+
+ .ease {
+   transition-timing-function: ease;
+ }
+

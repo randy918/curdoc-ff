@@ -1,0 +1,127 @@
+/* * declaring font family for body */
+body {
+	/* font-family: 'Alfa Slab One', cursive; */
+	font-family: 'Roboto Slab', serif;
+	/* font-family: 'Helvetica'; */
+}
+
+h1 {
+	font-family: 'Helvetica', sans-serif;
+}
+
+/* * declaring weight, not italic */
+body {
+	background-color: #333;
+	font-weight: 500;
+	font-style: normal;
+}
+
+/* * actual beginning */
+/* selectors */
+
+* {
+	margin: 0;
+	color: rgb(121, 43, 43);
+	/* padding: 1vw; */
+}
+
+.navbar {
+	background: blue;
+	height: 8vh;
+	color: white;
+	font-size: 40px;
+}
+
+.banner {
+	background: red;
+	min-height: 1vw;
+	color: white;
+	font-size: 40px;
+}
+
+h1 {
+	background: rgb(196, 140, 140);
+	padding-top: 30px;
+	margin-top: 4vw;
+	margin-left: 0 vw;
+}
+
+p {
+	background: blue;
+}
+
+p {
+	width: 50vw;
+	background: coral;
+	padding: 18px;
+	margin: 16px;
+	/* border: 4vw solid white; */
+}
+
+.outer {
+	width: 50%;
+	height: 50%;
+	background-color: green;
+}
+.inner {
+	width: 50%;
+	height: 50%;
+	background-color: salmon;
+}
+
+div {
+	font-size: 20px;
+}
+
+/* master-styler font-based 51719.1820{
+  color: xxx;
+  font-family: xxx;
+  font-size: rem;
+  font-style: xxx;
+  font-weight: xxx;
+  letter-spacing: xxx;
+  line-height: 000;
+  text-indent: 000;
+  text-shadow: xxx;
+  text-transform: capitalize;
+  text-transform: lowercase;
+  text-transform: uppercase;
+  text-transform: none;
+  width: 000;
+  word-spacing: 000;
+
+master-styler box-based----------------
+
+border-bottom: xxx;
+border-color: xxx;
+border-left: xxx;
+border: 0.2vh solid #222;
+border-radius:
+border-bottom-left-radius: 000;
+border-bottom-right-radius: 000;
+border-top-left-radius: 000;
+border-top-right-radius: 000;
+border-right: xxx;
+border-style: hidden;
+border-style: solid;
+border-style: none;
+border-top: 000;
+border-width: 000;
+margin: 0 auto;   this is to center
+margin-bottom: 000;
+margin-left: 000;
+margin-right: 000;
+margin-top: 000;
+outline-color: 000;
+outline-offset: 000;   unique to outline
+outline-style: 000;
+outline-width: 000;
+outline: 0.2vh solid #222;
+padding: 000;
+padding-bottom: 000;
+padding-left: 000;
+padding-right: 000;
+padding-top: 000;
+
+
+} */

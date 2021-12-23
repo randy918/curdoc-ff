@@ -1,0 +1,1641 @@
+//todo  positioning 
+//todo  display 
+//todo  box-model 
+//todo  typography
+//todo  manipulation
+//todo  misc
+
+
+ //!  Sass Default Variables PERMANENT
+ $colors: (bg: rgba(55, 66, 76, 1),
+    theBlue: rgba(26, 161, 217, 1),
+    theDarkGray: rgba(43, 50, 56, 1),
+    theGray: rgb(78, 92, 107),
+    theGreen: rgba(0, 173, 43, 1),
+    theRed: rgba(194, 47, 51, 1),
+    theYellow: rgb(221, 172, 94),
+ );
+
+ //!  Sass Default Functions PERMANENT
+ @function getColor($color-name) {
+   @return map-get($colors, $color-name);
+ }
+
+ //!  Tabletop Google Sheets integration
+ //!  Default font/etc body setup PERMANENT
+ //!  Actual CSS  starts here
+
+ * {
+   box-sizing: border-box;
+ }
+
+ h1 {
+   color: white;
+
+   font-size: 30px;
+   font-weight: 900;
+   line-height: 1;
+ }
+
+ h2 {
+   color: white;
+text-align: center;
+   font-size: 1rem;
+   font-weight: 200;
+   line-height: 2;
+ }
+
+ h3 {
+  color: white;
+  font-size: clamp(0.66rem, 1.5vw, 0.75rem);
+  font-weight: 400;
+  line-height: 1.25;
+ }
+
+ .bold {
+   font-weight: 900;
+ }
+
+ .green {
+   color: rgba(0, 173, 43, 1)
+ }
+
+ .blue {
+   color: getColor(theBlue);
+
+   font-weight: 900;
+ }
+
+ .yellow {
+   color: getColor(theYellow);
+
+   margin-bottom: 0;
+   padding-bottom: 0;
+ }
+
+ .bgyellow {
+   background-color: getColor(theYellow);
+ }
+
+ #tvcHeader {
+   text-align: center;
+ }
+
+ .v0 {
+   margin-top: 0;
+   padding-top: 0;
+ }
+
+ .v1 {
+   margin-top: 7px;
+ }
+
+ .box {
+   margin-top: 0;
+   padding-top: 0;
+ }
+
+ body {
+   background: url("../images/shutterstock_1687574617.jpg");
+   background-position: cover;
+   font-family: 'Overpass', sans-serif;
+   font-weight: 900;
+   font-size: 30px;
+   margin: 0;
+   padding: 3vh 3vw 3vh 3vw;
+
+   // background-color: floralwhite;
+ }
+
+ .main-logo {
+  width: clamp(100px, 50%, 500px);
+}
+
+.flag-image {
+
+  width: 180px;
+  height: auto;
+
+}
+.image {
+position: relative;
+  width: 180px;
+  height: auto;
+  margin-top: .5rem;
+
+}
+
+.image__img {
+
+  display: block;
+  width: 100%;
+  height: 100%;
+  
+
+
+}
+
+.image__overlay {
+
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 85%;
+background: rgba(255, 255, 255, 0.5);
+opacity: 0;
+transition: 0.3s;
+}
+
+.image__overlay:hover {
+
+  opacity: 1;
+
+}
+
+.lightbox {
+
+position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,.5);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+
+}
+
+.lightbox__content {
+width: 75%;
+
+
+}
+
+.buttonGroup  {
+text-align: center;
+  display: block;
+
+  margin: 1rem;
+
+&__button {
+
+  border-radius: .25rem;
+  border-style: none;
+
+  margin: 0 .25rem 0 .25rem;
+  padding: .4rem 1rem 0 1rem;
+
+  font-size: 1.5rem;
+  line-height: 1;
+
+  background-color: green;
+  color: white;
+
+    
+}
+}
+
+ #gridContainer {
+   display: grid;
+   gap: 10px 40px;
+   grid-template-columns: repeat(auto-fill, 180px);
+   grid-auto-flow: row;
+   align-items: start;
+   justify-content: center;
+
+ }
+
+ //&  21121.1835     IS img necessary?
+ // img {
+ //   width: 180px;
+ //   // height: 370px;
+ //   margin-top: 10px;
+ //   margin-bottom: 5px;
+ // }
+
+ /* Opacity #2 */
+.hover12 figure {
+	background: #1abc9c;
+}
+.hover12 figure img {
+	opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.hover12 figure:hover img {
+	opacity: .5;
+}
+
+ .btn {
+   display: inline-block;
+   background-color: getColor(theBlue);
+   border: none;
+   width: 85px;
+   color: getColor(black);
+   text-align: center;
+   font-size: 16px;
+   // margin-top: 15px;
+   padding: 0px 0px;
+   transition: 0.3s;
+ }
+
+ .btn:hover {
+   background-color: getColor(theDarkGray);
+   color: getColor(theYellow);
+ }
+
+ .btn2 {
+   background-color: getColor(theRed);
+   border: none;
+   width: 85px;
+   color: getColor(theYellow);
+   text-align: center;
+   font-size: 16px;
+   // margin-top: 15px;
+   // padding: 10px 10px;
+   transition: 0.3s;
+ }
+
+ .btn2:hover {
+   background-color: getColor(theDarkGray);
+   color: getColor(theYellow);
+ }
+
+ // .invertedPhotoAttempt {
+ //   transform: scaleX(-1);
+ //   transform: scaleY(-1); 
+
+
+ // }
+
+
+ //!  21121.1850     END HERE
+
+ //!  21121.1850     END HERE
+
+ // .myBtnContainer {
+
+ // }
+
+
+ //!  72319.2153 BUTTON BAR ATTEMPT
+
+ // .myButtonGroup {
+ //   margin: auto;
+ //   margin-top: 36px;
+ //   display: flex;
+ //   flex-direction: row;
+ //     flex-wrap: wrap;
+
+ //   justify-content: center;
+ //   line-height: 1;
+ //   // overflow: hidden;
+ // }
+
+ // #myButton3 {
+ //   background-color: getColor(theYellow)
+ // }
+
+ // .myButton  {
+ //   background-color: getColor(theGray);
+ //   border: none;
+ //   color: white;
+ //   flex-grow: 1;
+ //   padding: 3px 10px;
+ //   text-align: center;
+ //   text-decoration: none;
+ //   display: inline-block; 
+ //   font-size: 16px;
+ //   margin: 0;
+ //   float: left;
+ // }
+
+ // .myButton:hover {
+ //   background-color: getColor(theRed);
+
+ // }
+
+ // .active {
+ //   background: #7f7f7f;
+ // }
+
+ // .buttonFirst {
+ //   border-radius: 6px 0 0 6px;
+ //   padding-left: 16px;
+ // }
+
+ // .buttonLast {
+ //   border-radius: 0 6px 6px 0;
+ //   padding-right: 16px;
+ // }
+
+
+ //!  72319.2312   END OF MY BUTTON PANEL
+
+
+ //!  start JQUERY TEST CSS  starts here 62819.1722 
+
+ // .jqueryHeader {
+ //   background: #333;
+ //   color:#fff;
+ //   padding: 20px;
+ //   margin-top: 40px;
+ //   text-align: center;
+ //   border-bottom: 4px #000 solid;
+ //   margin-bottom: 10px;
+ // }
+
+ // #containerJqueryTest {
+ //   width: 90%;
+ //   margin: auto;
+ //   margin-bottom: 60px;
+ //   margin-top: 60px;
+
+ //   padding: 10px;
+ //   padding-top: 20px;
+ // }
+
+ // #box {
+ //   background: getColor(theGreen);
+ //   color: white;
+ //   height: 90px;
+ //   padding: 40px;
+ //   text-align: center;
+ // }
+
+ // button {
+ //   background-color: white;
+
+ // }
+
+ // .myClass {
+ //   color: blue;
+ //   background: black; 
+ // }
+
+ // #heading1 {
+
+ // }
+ // #para1 {
+
+ // }
+ // .heading2 {
+
+ // }
+ // .para2 {
+
+ // }
+
+ //!  end JQUERY TEST CSS  starts here
+
+
+
+
+
+ // // ! NAVBAR BEGINS
+
+ // nav {
+ //   font-size: 1rem;
+ //   font-weight: 300;
+ // line-height: 1.1;
+ //   color: getColor(theYellow);
+ //   background-color: getColor(theDarkGray);
+ //   margin-top: 20px;
+ //   margin-bottom: 60px;
+ //   width: 940px;
+ //   margin: 40px auto;
+ // }
+
+ // nav ul {
+ //   list-style-type: none;
+ //   margin: 0;
+ //   padding: 0;
+ //   display: flex;
+ //   justify-content: start;
+ // }
+
+ // nav ul li {
+ //   cursor: pointer;
+ //   padding: 0.25rem;
+ //   flex: auto;
+ //   text-align: center;
+ // }
+
+ // nav ul li:hover {
+ //   background-color: getColor(theGreen);
+ //   color: white;
+ // }
+ // nav ul li:active {
+ //   background-color: getColor(theRed);
+ //   color: white;
+ // }
+
+
+ // .currentPageItem {
+ //   background-color: getColor(theRed);
+ //   color: white;
+ // }
+
+
+ // // ! NAVBAR ENDS
+
+
+
+
+
+ // .innerGridContainer {
+ //   display: grid;
+ //   grid-gap: 0;
+ // }
+
+ // .box {
+ //   background: getColor(theYellow);
+ //   padding: 0;
+ //   margin-bottom: 30px;
+
+ // }
+
+ // #span2 {
+ //   grid-column: span 2;
+ // }
+
+ // .one {
+ //   background: getColor(bg);
+ // }
+
+
+
+ // img.smallImg {
+ //   position: absolute;
+ //   bottom: 360px;
+ //   right: 80px;
+ //   height: 80px;
+ //   width: 80px;
+ // }
+
+
+
+
+
+ // .btn3 {
+ //   background-color: getColor(theGray);
+ //   border: none;
+ //   width: 280px;
+ //   color: getColor(theYellow);
+ //   text-align: center;
+ //   font-size: 20px;
+ //   margin-top: 15px;
+ //   padding: 10px 10px;
+ //   transition: 0.3s;
+ // }
+
+ // .btn3:hover {
+ //   background-color: getColor(theDarkGray);
+ //   color: getColor(theYellow);
+ // }
+
+ // span.line  {
+ //   display: inline-block;
+ // }
+
+
+
+
+
+ //!  62719.0030 attempting jquery test in css
+
+
+
+
+ //!  Actual CSS  ends here
+
+
+
+
+
+ // body {
+ //   background: getColor(bg);
+ //   height: 100vh;
+ //   background-size: cover;
+ //   // padding-top: 0;
+ // }
+
+ // // Beginning of H SERIES definitions
+ // h6 {
+ //   font-family: 'Exo',
+ //   sans-serif;
+ //   font-weight: 400;
+ //   line-height: 1.3;
+ //   font-size: 16px;
+ //   line-height: normal;
+ //   text-align: center;
+ //   color: white;
+ //   padding: 0;
+ //   margin: 10px;
+ //   letter-spacing: 1px;
+ // }
+
+ // // Beginning of part 1 of 4 HEADER
+ // .mainHeader {
+ //   background: url(/images/6-09-19-10818-42217c-zydot-header3.jpg);
+ //   width: 960px;
+ //   height: 291px;
+ //   margin: 0 auto;
+ //   width: 960px;
+ //   border-radius: 0 0 20px 20px;
+ // }
+
+ // .mainHeaderUltimateBlend1Of3 {
+ //   // background: blue;
+ //   padding-top: 16px;
+ //   font-size: 16px;
+ //   text-align: center;
+ //   color: white;
+ // }
+
+ // .mainHeaderUltraClean2Of3 {
+ //   // background: blue;
+ //   position: relative;
+
+ //   font-size: 16px;
+ //   text-align: center;
+ //   color: white;
+ // }
+
+ // .mainHeaderExpelit3Of3 {
+ //   // background: blue;
+ //   padding-top: 35px;
+ //   font-size: 16px;
+ //   text-align: center;
+ //   color: white;
+ // }
+
+ // .topMenu {
+ //   display: grid;
+ //   width: 960px;
+ //   height: 120px;
+ //   grid-template-columns: 1fr 1fr 1fr;
+ //   grid-column-gap: 30px;
+ // }
+
+ // #positionTypeUltimateBlend {
+ //   position: relative;
+ //   top: 15px;
+ // }
+ // #positionTypeUltraClean {
+ //   position: relative;
+ //   top: 15px;
+ // }
+ // #positionTypeExpelit {
+ //   position: relative;
+ //   top: 15px;
+ // }
+
+ // .navbar1 {
+ //   position: absolute;
+ //   color: white;
+ //   list-style: none;
+ //   text-align: center;
+ //   font-size: 21px;
+ //   font-weight: 600;
+ //   z-index: 1000;
+ //   margin-top: 260px;
+ //   left: 0; 
+ //   right: 38px;
+ // }
+
+ // .navbar1 > li {
+ //   display: inline-block;
+ //   padding-right: 12px;
+ //   padding-left: 12px;
+
+ // padding: 0 20px 0 20x;
+ // }
+
+ // // .navbar1 > li > a {
+ // //   display: inline-block;
+ // //   padding: 0 20px 0 20x;
+ // //   text-decoration: none; 
+ // //   color: white;
+ // // }
+ // Beginning of part 2 of 4 SLIDER
+ // #slider {
+ //   overflow: hidden;
+ //   width: 960px;
+ //   margin: 30px auto;
+ //   border-radius: 20px 0 20px 0;
+ // }
+
+ // do i need this or not? 62219.1840 
+ // #slider figure img {
+ //   width: 20%;
+ //   float: left;
+ // }
+
+ // #slider figure {
+ //   position: relative;
+ //   width: 500%;
+ //   margin: 0;
+ //   Left: 0;
+ //   text-align: left;
+ //   font-size: 0;
+ //   animation: 20s sliderAnimation infinite;
+ // }
+
+ // @keyframes sliderAnimation {
+
+ //   0% {
+ //     Left: 0;
+ //   }
+
+ //   20% {
+ //     Left: 0;
+ //   }
+
+ //   25% {
+ //     Left: -100%;
+ //   }
+
+ //   45% {
+ //     Left: -100%;
+ //   }
+
+ //   50% {
+ //     Left: -200%;
+ //   }
+
+ //   70% {
+ //     Left: -200%;
+ //   }
+
+ //   75% {
+ //     Left: -300%;
+ //   }
+
+ //   95% {
+ //     Left: -300%;
+ //   }
+
+ //   100% {
+ //     Left: -400%;
+ //   }
+ // }
+
+ // //! Beginning of part 3 of 4 MAIN PRODUCTS
+ // .threeMainProducts {
+ //   display: grid;
+ //   width: 960px;
+ //   height: 589px;
+ //   grid-template-columns: 1fr 1fr 1fr;
+ //   grid-column-gap: 30px;
+ //   margin: 0 auto;
+ // }
+
+ // .mainUltimateBlend,
+ // .mainUltraClean,
+ // .mainExpelit {
+
+ //   background: blue;
+
+
+
+
+
+ // }
+
+ // //! Beginning of part 4 of 4 FOOTER
+ // footer {
+ //   width: 960px; height:353px;
+ //   margin: 0 auto;
+ //   background-color: blue;
+ //   margin-top: 30px;
+ //   border-radius: 20px 20px 0 0;
+
+ // }
+
+ // p  {
+ //   font-size: 2vh;
+ //   color: white;
+ //   margin: 0 auto;
+ //   position: absolute;
+ //   z-index: 10000;
+ // }
+
+ //!  Actual CSS  ends here
+
+ // GRID STUDY 61919.1848 
+ // .container {
+ //   display: grid;
+ //   grid-template-rows: repeat(2, minmax(150px, min-content));
+ // grid-template-columns: repeat(auto-fill, 100px);
+ //auto fill has empty unused boxes, whereas auto fit doesnt use the empty area at all
+ //IMPORTANT minmax(100px, 1fr):  will stretch to container width nicely--great for simulating media queries without making any
+ // grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+ // }
+
+
+ //  .item {
+ //    background: getColor(emphasis);
+ //    background-color: getColor(accent);
+ //   border-radius: 25px;
+ //    padding: 20px;
+ //    color: white;
+ //  }
+
+
+
+ // MINMAX 
+ // .container {
+ //   width: 100vw;
+ //   margin: 30px auto;
+ //   background-color: #ddd;
+ //    display: grid;
+ //  grid-template-rows: repeat(2, 150px);
+ // max-content means width is based on max width content, no line breaks
+ //  grid-template-columns: min-content 1fr 1fr min-content;
+ // grid-template-rows: repeat(2, min-content);
+ // min and max range supplied
+ // this is a range from 150 through depth of text
+ //  grid-template-rows: repeat(2, minmax(150px, min-content))
+ // }
+
+ // using MINMAX
+ // grid-template-rows: repeat(2, minmax(150px, min-content)
+ // grid-template-columns: minmax(200-px, 300px)
+
+
+ // .item {
+ //   background: getColor(emphasis);
+ //   background-color: getColor(accent);
+ //  border-radius: 50%;
+ //   padding: 20px;
+ //   color: white;
+
+ //   &-1  {background-color: getColor(accent)}
+ //   &-2 {
+ //     background-color: black
+ //   }
+ //   &-3 {
+ //     background-color: coral
+ //   }
+ //   &-4 {
+ //     background-color: green
+ //   }
+ //   &-5 {
+ //     background-color: blue
+ //   }
+ //   &-6 {
+ //     background-color: pink
+ //   }
+ //   &-7 {
+ //     background-color: red
+ //   }
+ //   &-8 {
+ //     grid-template: (emphasis)
+ //   }
+ // }
+
+ //  .container {
+ //    width: 100vw;
+ //    margin: 30px auto;
+ //    background-color: #ddd;
+ //    display: grid;
+ //    grid-template-rows: repeat(2, 150px);
+ //    grid-template-columns: repeat(2, 200px);
+ //    height: 1000px;
+ //    grid-gap: 40px;
+ //horizontally center in container, space-around, space between, space evenly NICE--BIG PICTURE ALIGNMENT
+ // "CONTENTS" ALWAYS BIG PICTURE, ALIGN IS VERTICAL JUSTIFY IS HORISZONTAL, ITEMS IS SMALL PICTURE
+ // grid-auto-flow: row dense; will fill in box gaps
+ //    justify-content: space-evenly;
+ //  }
+
+ //  .item {
+ //    background: getColor(emphasis);
+ //    padding: 20px;
+ //    color: white;
+ //  }
+
+
+ // .container {
+ //   width: 100vw;
+ //   margin: 30px auto;
+ //   background-color: #ddd;
+ //   display: grid;
+ //   grid-template-rows: repeat(2, 150px);
+ //   grid-template-columns: repeat(2, 1fr);
+ //   grid-gap: 30px;
+ // // auto is aimed at the implicit blocks, overflow rows
+ //   grid-auto-flow: row;
+ //   //grid-auto-flow: row or column:  defaults to row
+ //   justify-items: center; //horizontally
+ //   grid-auto-columns: .5fr; // can indicate size
+ //   // align-items is initially set to stretch, why it fills the box, otherwise "start and "end"
+ //   align-items: center;
+
+
+ //   .item {
+
+ //     padding: 20px;
+ //     color: rgb(41, 19, 19);
+ //     background-color: getColor(accent);
+
+ //     &-4 {
+ //       background-color: getColor(primary);
+ //       grid-row: 2 / span 3;
+ //     }
+ //     &-7 {
+ //       background-color: getColor(secondary);
+ //       grid-column: 1 / -1;
+ //     }
+
+ //   }
+ // }
+
+
+
+
+
+
+
+ // IMPICIT and EXPLICIT grids--explicit is defined like the first four cells here, implicit is the overflow styles automatically
+
+ // .container {
+ //   width: 100vw;
+ //   margin: 30px auto;
+ //   background-color: #ddd;
+ //   display: grid;
+ //   grid-template-rows: repeat(2, 150px);
+ //   grid-template-columns: repeat(2, 1fr);
+ //   grid-gap: 30px;
+ // // auto is aimed at the implicit blocks, overflow rows
+ //   grid-auto-rows: 8vh;
+ //   //grid-auto-flow: row or column:  defaults to row
+ //   grid-auto-flow: column;
+ //   grid-auto-columns: .5fr; // can indicate size
+
+
+ //   .item {
+ //     padding: 20px;
+ //     color: white;
+ //     background-color: getColor(accent);
+ //   }
+ // }
+
+
+
+
+ // container {
+ //   width: 100vw;
+ //   // margin: 10px auto;
+ //   display: grid;
+ //   grid-template-rows: 100px 200px 400px 100px;
+ //   grid-template-columns: repeat(3, 1fr) 200px;
+ //   grid-gap: 30px;
+
+ //   grid-template-areas: "head head head head""box box box side""main main main side""foot foot foot foot";
+ // this must match number of cells exactly
+
+
+
+ // the & is direct children, the * is all of them
+ // &>* {
+ //   background-color: getColor(accent);
+ //   padding-left: 2vw;
+ //   padding-top: 1vh;
+ //   // margin: 20px;
+ // }
+
+ // you are labeling what you had already made (not making it happen)
+ // grid-template-areas: "head head head" "box1 box2 box3" "aB aB footer"; THIS IS WITH GAP NAMES
+
+ //THIS IS WITH GRID-AREA NAMES
+ // }
+
+ // .header {
+ //   grid-area: head; // as defined above in grid-template-areas:
+
+ // .container {
+ //   background-color: getColor(primary);
+ //   width: 70vw;
+ // height: 70vh;
+ // margin: 30px auto;
+ // this makes it grid
+ // display: grid;
+ // define rows first
+ // grid-template-rows: 150px 150px; or as NO GAP AFTER REPEAT
+ // grid-template-rows: 1fr 2fr 4fr 1fr;
+ // grid-template-columns: repeat(3, 25%) 1fr;
+
+ // define columns next
+ // grid-template-columns: repeat(2, 150px) 300px;
+ // grid-template-columns: repeat(2, 150px) 1fr; This 1fr fills in the rest to the right--can be fractional, like 2.5
+ // fr is ONLY for CSS GRID
+ //   you can also use just grid-gap: 30px; for the following
+ // grid-row-gap: 7vw;
+ // grid-column-gap: 2vw;
+ // .item {
+ //   padding: 20px;
+ // }
+ // & notation lets you just use the distinctive end of a class name  <div class="item item-1">1: Orange</div>
+ // &-1 means "ends with "-1""
+ // you can reposition grid objects by using their row/column numbers
+ // grid-row-start: 2;
+ // grid-row-end: 3;
+ // or the same is: grid-row: 2 / 3;  SAME FOR COLUMN
+ // OR can move with both xy's: grid-area: RS / CS / RE / CE: 
+
+ // SPANNING GRID AREAS you can use the above with ranges.
+ // grid-row: 3-5; would span boxes 3-4 4-5. two areas
+
+ // MOVING MULTIPLE GRID ITEMS CAN STACK THEM IN SAME CELL!
+ // Z-INDEX CAN TAKE CARE OF STACKING
+ // also grid-column 1: 1 / span 2: --starts at 1, goes 2 boxes across
+ // grid-column 1: 1 /-1--  "-1" means "to the end"
+
+ // GRID LINES SHOULD BE NAMED=========================
+ // grid-template-rows: [header-start] 100px [header-end boxes-start] etc, can be dual named--can use names instead of numbers
+ //grid-row: box-start / main-end;   instead of numbers
+ // grid-template-columns: repeat(3, [col-start] 1fr [col-end]) will produce numbered name sets
+
+ // GRID BOXES SHOULD BE NAMED=========================
+ // the following describes ROWS of names, vertical ones will show up more than once, like side below
+ // grid-template-area: "head head head head" "box box box side" "main main main side" "foot foot foot foot";
+ // 
+ // grid rows and columns are edge 1 2 3 4 both directions right and down
+ // grid-gutters are gaps between grid boxes
+ //   }
+ // }
+ // "aB aB footer";
+ // THIS IS WITH LINE NUMBERS
+ // }
+
+ // .header {
+ //   grid-column: 1 / -1;
+ // }
+
+ // .sidebar {
+ //   grid-column: 4 / 5;
+ //   grid-row: 2 / 4;
+ // }
+
+ // .main-content {
+ //   grid-column: 1 / 4;
+ //   // grid-row: 2 / 4;
+ // }
+
+ // .footer {
+ //   grid-column: 1 / -1;
+ //   // grid-row: 2 / 4;
+ // }
+
+
+
+ // // /*!  concise "sass map" way to use "Scss VARIABLES"(WITH SCSS) */
+
+ // // $colors: (
+ //     primary: #38CA55,
+ //     primary-light: lighten(#38CA55, 40%),
+ //     accent: #FFAF50,
+ //     emphasis: #39415A,
+ //     secondary: #999,
+ // );
+
+ // $padding: 16px;
+ // $border: 24px;
+
+ /*! SASS FUNCTIONS */
+
+ // @function getColor($color-name) {
+ //     @return map-get($colors, $color-name)
+
+ // }
+
+
+ // /*!  or this way as a simple variable */
+ // $mycolor: #eee; 
+
+
+ // body, html {
+ //     height: 100%;
+
+ // }
+
+
+
+ // body {
+ //     font-family: 'Roboto Slab', serif;
+ //     font-weight: 900;
+ //     font-size: 3vh;
+ //     margin: 0;
+
+ /* this is NESTED in body (only in sass) and clip-path first and item clipped together  */
+ //     #bg {
+ //         clip-path: polygon(100% 0, 100% 80%, 64% 100%, 0% 100%, 0 0%);
+ //         /* this is the function usage in sass 
+ //         based on function getColor above */ 
+ //         background-color: getColor(primary);
+
+ //         width: 80%;
+ //         height: 100%;
+ //         position: absolute;
+ //         z-index: -1;
+ //     }
+
+ //     header a {
+ //         color: #hhh;
+ //         text-decoration: none;
+ //         padding: $padding;
+ //         display: block;
+ //         text-transform: uppercase  ;
+
+ //     }
+ // }
+
+ // main {
+ //     background: getColor(primary)
+ // }
+
+ // section#card {
+ //     background: getColor(accent);
+ //     padding: $padding;
+ //     margin: 1em auto;
+ //     border-radius: $border;
+ //     box-shadow: 0 10px 30px rgba(0, 0, 0, .2);
+ //     width: 75vw;
+
+ // ul {
+ //     list-style-type: none;
+ //     margin: 0;  padding: 0;
+
+ //     li {
+ //         margin-bottom: 10px;
+
+ //             span  {
+ //             }
+ //             strong {
+ //                 display: inline-block;
+ //                 margin-left: max(40px);
+ //                 margin-top: 10px;
+
+ //             }
+
+ //     }
+ //     section#primary {
+ //         color: white; 
+ //     }
+
+ // }
+
+ // }
+
+ // .item-5 {
+ //     background-color: map-get($colors, primary);
+
+ // }
+
+
+ /* }
+p { =  = 
+  padding: 2vh;
+} */
+
+ /*! beginning of CSS GRID 61519.1703 ATTEMPT */
+ /* verical = "column axis" horizontal = "row axis" 
+edges start at 1:  i.e 3 columns have 1  2  3  4 as edges
+row gutter:  column gutter
+*/
+
+ // .container {
+ /* display: grid; /* turns on css grod */
+ /* grid-template-columns: 100px auto 100px;
+  grid-template-rows: 50px auto 50px;
+  background-color: var(--color2);
+  margin: 0;
+   padding: 2vh;
+  grid-gap: 3px; */
+ /* background-color: #eee; */
+ //     width: 1000px;
+ //     margin: 30px auto;
+ //     display: grid;
+ //     grid-template-rows: 20vh 20vh;
+ //     grid-template-columns: 20vw 20vw 20vw;
+ // }
+
+ // .item {
+ //     padding: 2vw;
+ // }
+
+ // .item-1 {
+ //     color: var(--color1);
+ //     background-color: var(--color2);
+ // }
+
+ // .item-2 {
+ //     color: var(--color2);
+ //     background-color: var(--color3);
+ //     }
+
+ // .item-3 {
+ //     color: var(--color3);
+ //     background-color: var(--color4);
+ // }
+
+ // .item-4 {
+ //     color: var(--color4);
+ //     background-color: var(--color1);
+ // }
+
+ // .item-5 {
+ //     color: var(--color1);
+ //     background-color: var(--color2);
+ // }
+
+ // .item-6 {
+ //     color: var(--color2);
+ //     background-color: var(--color3);
+ // }
+
+ /*! beginning of CUSTOM CSS--CSS GRID */
+
+ /* grid-template-rows: 20vh 20vh; height of first 2 rows
+/* grid-template-columns: 20vw 20vw 20vw; width of 3 columns
+
+
+/*! beginning of bootstrap CSS */
+
+ /* h5 {
+  text-transform: : uppercase;
+  margin: 20px 0;
+}
+
+h5 span {
+  text-transform: lowercase;
+}
+
+.course-heading {
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--color2);
+  border: 5px solid var(--color3);
+  margin: 50px 0;
+  padding: 10px;
+}
+/* -sm- landscape phones */
+ /* @media (min-width: 576px) { */
+
+
+ /* -md- tablets */
+ /* @media (min-width: 57 768px) { */
+
+
+ /* -lg- desktop */
+ /* @media (min-width: 992px) { */
+
+ /* -xl- large desktop */
+ /* }
+@media (min-width: 1200px) {
+
+} */
+
+
+ /*! end of CUSTOM CSS */
+
+ /*
+
+MEDIA WIDTH
+
+/* -sm- landscape phones */
+ /* @media (min-width: 576px) {} */
+
+ /* -md- tablets */
+ /* @media (min-width: 57 768px) {} */
+
+ /* -lg- desktop */
+ /* @media (min-width: 992px) { */
+
+ /* -xl- large desktop */
+ /* @media (min-width: 1200px) {} */
+
+
+ // ANIMATION,
+ // not just beginning to end,
+ // has many way points .animation {
+ //     background: blue;
+ /* animation-name: move; /* note move name in keyframes */
+ /* animation-duration: 10s; */
+ /* animation-iteration-count: 2; 
+  animation: move 5s infinite;
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(20x)
+  }
+
+  50% {
+    transform: translateX(100px);
+    background: red;
+  }
+
+  75% {
+    transform: translateX(-200px);
+    background: yellow;
+  }
+
+  100% {
+    transform: translateX(20px);
+    background: green;
+  }
+div {
+  width: 200px;
+  height: 100px;
+  color: white;
+  padding: 1vh;
+  margin: 10px;
+}
+
+.animation {
+  background: blue;
+  animation: move 5s 2;  // 5 seconds, 2 times
+  animation-fill-mode: forwards; // this leaves the graphics where it was
+}
+@keyframes move {
+  0% {
+    opacity: 0%;
+  }
+
+  25% {
+    transform: translateX(200px);
+    opacity: 0.25;
+  }
+
+  50% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(200px);
+    opacity: 0.5;
+  }
+}
+
+ .banner {
+  border: 5px solid red;
+  padding: 2vw;
+}
+
+.one {
+  float: right;
+} + 
+.two {
+  float: left;
+  height: 300px;
+} */
+
+ /* * declaring weight, not italic */
+ /* body {
+	background-color: #333;
+	font-weight: 900;
+	font-style: normal;
+	/* margin: 0; */
+ /* }
+
+* { */
+ /* margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+/* } */
+
+ /* ul {font-size: 7vh;
+} */
+
+ /* * actual beginning */
+ /* selectors */
+ /* * 52419.2116  */
+
+ /* div {
+  width: 25vw;
+  height: 25vh;
+} */
+
+ /* master-styler font-based 51719.1820
+
+  background-color: xxx;
+  color: xxx;
+  font-family: xxx;
+  font-size: rem;
+  font-style: xxx;
+  font-weight: xxx;
+  letter-spacing: xxx;
+  line-height: 000;
+  text-align: center;
+  text-align: justify;
+  text-align: left;
+  text-align: right;
+  text-indent: 000;
+  text-shadow: xxx;
+  text-transform: capitalize;
+  text-transform: lowercase;
+  text-transform: uppercase;
+  text-transform: none;
+  width: 000;
+  word-spacing: 000;
+
+/* master-styler box-based---------------- align-items: center;
+
+background-attachment: fixed; // stays in single device position, does not scroll
+ background: linear-gradient(rgba(255, 0, 0, 0.5), rgba(0, 0, 255, 0.5)),
+ url("/images/other.jpg");
+background: linear-gradient(blue, red);
+background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9));
+background: linear-gradient(to top, blue, red);
+background: linear-gradient(to left, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9));
+background: linear-gradient(150deg, blue, red);
+
+background-blend-mode: xxx;
+background-position: bottom;
+background-position: center; // IMPORTANT BEST CHOICE
+background-position: left;
+background-position: right;
+background-position: top;
+background-position: 0, 0;  
+background-position: 20%, 10%;  
+background-repeat: no-repeat;  // IMPORTANT BEST CHOICE
+background-repeat: repeat;
+background-repeat: repeat-x;
+background-repeat: repeat-y;
+background-repeat: round; //stretches to whole pic
+background-repeat: space;
+background-size: cover; // IMPORTANT BEST CHOICE
+background-size: contain;
+
+border-bottom: xxx;
+border-color: xxx;
+border-left: xxx;
+border: 0.2vh solid #222;
+border: 5px solid red;
+
+border-radius: border-bottom-left-radius: 000;
+border-bottom-right-radius: 000;
+border-top-left-radius: 000;
+border-top-right-radius: 000;
+border-right: xxx;
+border-style: hidden;
+border-style: solid;
+border-style: none;
+border-top: 000;
+border-width: 000;
+
+box-sizing: border-box // makes padding inset, not outset
+
+CSS VARIABLES
+
+:root { // global---root is global
+  --color1: #38ca55;
+  --color2: #ffae50;
+  --color3: #39414a;
+  --color4: #999;
+  --mainTransition: all 0.4s linear;
+}
+--varName:valueKind
+property:var(--varName)
+:root{} === global
+element ===local
+:root {
+  --basicColor: #f15025; //doubledash indicates the variable--BEING NAMED
+}
+.heading {
+  color: var(--basicColor)
+}
+.heading {
+  color: var(--color1);
+}
+.second-heading {
+  color: var(--color2);
+  transition: var(--mainTransition);
+}
+.second-heading:hover {
+  color: var(--color1);
+}
+
+
+
+DESCENDANT AND CHILD COMBINATORS--children are more indirect that specific pointers
+.header h1 {
+  color: green;
+}
+
+div h1 {
+  color: red;
+}
+
+div>h1 {
+  color: blue;
+}
+
+
+display: flex;
+display: none; taken out totally, takes no space 
+justify-content: center;
+display: block CAN GET RID OF WHITE Margin under photos
+
+FIRST LINE / FIRST LETTER  // work easy
+p::first-line {
+  font-size: 12vh;
+}
+p::first-letter {
+  color: red;
+}
+
+
+float: left;
+clear: left: //float and clear should BOTH be same sides, like left here)
+float: right;
+
+HOVER  single colon
+p:hover {
+  font-size: 4vw;
+}
+a:hover {
+  text-decoration: none;
+
+  LINK PSEUDO SELECTOR
+  a:link {
+    color: aqua;
+  }
+  a:visited {
+    color: red;
+  }
+  a:hover {
+    color: aqua;
+  }
+  a:active {
+    color: aqua;
+  }
+  
+this is to center margin-bottom: 000;
+margin-left: 000;
+margin-right: 000;
+margin-top: 000;
+
+min-height: 000;
+
+opacity: 0; // 0 - 1 percentage
+
+outline-color: 000;
+outline-offset: 000;
+unique to outline outline-style: 000;
+outline-width: 000;
+outline: 0.2vh solid #222;
+
+padding: 000;
+padding-bottom: 000;
+padding-left: 000;
+padding-right: 000;
+padding-top: 000;
+
+position: static
+position: relative
+top: 5vh;
+left: 5vh;
+bottom: 5vh;
+right: 5vh;
+position: absolute; //absolute to the last parent that has location info
+--from position: RELATIVE PARENT, for example--as in "Absolute to someone above thats position: relative
+top: 50%;
+right: 0;
+button {
+  position: fixed;
+  top: 0;
+  right: 0;
+or... a parent is 'absolute' and children are all relative and shifted around  
+
+PSUEDO ELEMENTS BEFORE AND AFTER --------------------
+p::before {
+  content: "hello ";   places "hello" before the tag value (the text)
+}
+p::after {   //can use others css attributes too
+  content: "hello ";   places "hello" after the tag value (the text)
+}
+div::before {--causes motion and fading
+  content: "";
+  border: 2px solid red;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  box-sizing: border-box;
+  top: -40px;
+  left: -40px;
+  z-index: -2;
+  transition: all 0.5s linear;
+}
+
+div::after {
+  content: "";
+  /* border: 2px solid red; */
+ /* background: grey;
+  transition: all 0.5s linear;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  box-sizing: border-box;
+  top: -20px;
+  left: -20px;
+  z-index: -1; 
+   }  */
+ //     /* div:hover::after,
+ // div:hover::before {
+ //   top: 0;
+ //   left: 0; 
+ //   div:hover {
+ //     background: coral;
+ //   }
+
+ //   
+
+
+
+ //   PSEUDO CLASSES 
+
+
+
+
+ //      RESPONSIVE RELATED  
+
+ // min-width:    make sure you override completely, not have stray ones
+ // max-width:
+ // @media screen and (min-width: 576px) { //spacing needs to be PERFECT
+ //   change css;
+ // }
+ // @media screen and (max-width: 576px) { //spacing needs to be PERFECT
+ //   change css;
+ // }
+
+ //  visibility: hidden;
+ // element just not seen,still there 
+
+ // z-index
+ //  z-index: 4;   can be negative values, all relative
+ //  does not work wih position: static; only position: relative; position: absolute;
+
+ // ROOT ELEMENT OF DOCUMENT single COLON look up link here
+
+ // TRANSITIONS
+
+ // transform: translateX(20px);
+ // transform: translateY(20px);
+ // transform: translate(90px, 56px); // x y move
+ // transform: scaleX(1); % of original
+ // transform: scaleY(2); % of original
+ // transform: scale(1, 2); // x y scale
+ // transform: rotate(56deg); // z rotate
+ // transform: rotateZ(56deg); // z rotate, same as no Z
+ // transform: rotateX(56deg); // x rotate, equals vertical rotation
+ // transform: rotateY(56deg); // y rotate, equals vertical rotation
+ // transform: skew(-20deg):  same as skewX
+ // transform: skewX(-20deg)
+ // transform: skewY(-20deg)
+
+ // TRANSITION OVER TIME
+
+ // transition-property: background;
+ // transition-duration: 4s;
+ // transition-delay: 3s;
+
+ //  .three {
+ //    background: blue;
+ //    transition-property: background, border-radius; 
+ //    transition-duration: 4s, 2s;  // corresponding durations to above
+ //   .three {
+ //     background: blue;
+ //     transition: background 3s 2s, border-radius 5s 1s; shorthand,
+ //   what is changing plus how long plus delay, list of them IMPORTANT
+ //  .three {
+ //    background: blue;
+ //    transition: all 3s 2s; // all properties are used here
+ //  }
+ //  div {
+ //    width: 150px;
+ //    height: 150px;
+ //    background: blue;
+ //    margin: 15px;
+ //    padding: 20px;
+ //    color: white;
+ //    transition: all 1s;
+ //  }
+
+ //  div:hover {
+ //    transform: translateX(30vh);
+ //  }
+
+ //  .ease {
+ //    transition-timing-function: ease;
+ //  }
