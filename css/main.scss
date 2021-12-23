@@ -198,10 +198,33 @@ text-align: center;
 }
 }
 
+.buttonGroup__button {  background: #34d976;
+  background-image: -webkit-linear-gradient(top, #34d976, #2baab8);
+  background-image: -moz-linear-gradient(top, #34d976, #2baab8);
+  background-image: -ms-linear-gradient(top, #34d976, #2baab8);
+  background-image: -o-linear-gradient(top, #34d976, #2baab8);
+  background-image: linear-gradient(to bottom, #34d976, #2baab8);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;};
+
 .buttonGroup__button:hover {
-  background-color: #ccc;
+  background: #73e67a;
+  background-image: -webkit-linear-gradient(top, #73e67a, #61cc4b);
+  background-image: -moz-linear-gradient(top, #73e67a, #61cc4b);
+  background-image: -ms-linear-gradient(top, #73e67a, #61cc4b);
+  background-image: -o-linear-gradient(top, #73e67a, #61cc4b);
+  background-image: linear-gradient(to bottom, #73e67a, #61cc4b);
+  text-decoration: none;
   transition: .3s;
 }
+
+
 
  #gridContainer {
    display: grid;
@@ -268,6 +291,7 @@ text-align: center;
    background-color: getColor(theDarkGray);
    color: getColor(theYellow);
  }
+
 
  // .invertedPhotoAttempt {
  //   transform: scaleX(-1);

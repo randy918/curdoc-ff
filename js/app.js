@@ -16,12 +16,24 @@ const years = [];
 let year = 0;
 let oldYear = 0;
 let newYear = 0;
-let requestedYear = 2021;
+let requestedYear = 2022;
+let button2021 = 2021;
+let button2022 = 2022;
 let radioButtons = { All: false, Recent: false, 2022: false, 2021: true };
 
 const digitsInYear = 4;
 
 //!  21921.1621dddd----------------FUNCTIONS
+
+const init = function () {
+  duplicateJsonArray();
+
+  createIssueProperties();
+
+  createYearProperties();
+
+  createRangeOfYears();
+};
 
 const duplicateJsonArray = function () {
   allYears = [...ff];
@@ -102,47 +114,63 @@ const produceFilteredCovers = function () {
 };
 
 const deleteAllCovers = function () {
-  //todo how to delete dom elements
-
   $(".box").remove();
 };
 
 //! . 122221.2013     EVENT LISTENERS
-
+//todo duplicate the array,  dont iterate
 document
   .querySelector(".buttonGroup__button--all")
   .addEventListener("click", function () {
-    deleteAllCovers();
+    filteredYears.length = 0;
+    filteredYears = allYears.slice();
+    produceFilteredCovers();
   });
 
+//todo duplicate the array,  use first 12
 document
   .querySelector(".buttonGroup__button--recent")
   .addEventListener("click", function () {
-    deleteAllCovers();
+    filteredYears = allYears.slice();
+    filteredYears.length = 12;
+    produceFilteredCovers();
   });
 
 document
   .querySelector(".buttonGroup__button--2022")
   .addEventListener("click", function () {
     deleteAllCovers();
+    filteredYears.length = 0;
+    for (var j = 0; j < allYears.length; j++) {
+      //    debugger;
+      if (button2022 === Number(allYears[j].year)) {
+        filteredYears.push(allYears[j]);
+        c(filteredYears.length);
+        produceFilteredCovers();
+      }
+    }
   });
 
 document
   .querySelector(".buttonGroup__button--2021")
   .addEventListener("click", function () {
     deleteAllCovers();
+    deleteAllCovers();
+    filteredYears.length = 0;
+    for (var j = 0; j < allYears.length; j++) {
+      //    debugger;
+      if (button2021 === Number(allYears[j].year)) {
+        filteredYears.push(allYears[j]);
+        c(filteredYears.length);
+        produceFilteredCovers();
+      }
+    }
   });
 
 //!  122221.2014    MAIN SEQUENCE
 
 function main() {
-  duplicateJsonArray();
-
-  createIssueProperties();
-
-  createYearProperties();
-
-  createRangeOfYears();
+  init();
 
   createLitButton();
 

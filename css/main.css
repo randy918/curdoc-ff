@@ -154,8 +154,23 @@ body {
   color: white;
 }
 
+.buttonGroup__button {
+  background: #34d976;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#34d976), to(#2baab8));
+  background-image: linear-gradient(to bottom, #34d976, #2baab8);
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
 .buttonGroup__button:hover {
-  background-color: #ccc;
+  background: #73e67a;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#73e67a), to(#61cc4b));
+  background-image: linear-gradient(to bottom, #73e67a, #61cc4b);
+  text-decoration: none;
   -webkit-transition: .3s;
   transition: .3s;
 }
