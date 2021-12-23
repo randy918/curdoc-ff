@@ -154,6 +154,12 @@ body {
   color: white;
 }
 
+.buttonGroup__button:hover {
+  background-color: #ccc;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
 #gridContainer {
   display: -ms-grid;
   display: grid;

@@ -21,8 +21,6 @@ let radioButtons = { All: false, Recent: false, 2022: false, 2021: true };
 
 const digitsInYear = 4;
 
-//!  12-22-21.1838     EVENT LISTENERS
-
 //!  21921.1621dddd----------------FUNCTIONS
 
 const duplicateJsonArray = function () {
@@ -102,6 +100,40 @@ const produceFilteredCovers = function () {
       `;
   }
 };
+
+const deleteAllCovers = function () {
+  //todo how to delete dom elements
+
+  $(".box").remove();
+};
+
+//! . 122221.2013     EVENT LISTENERS
+
+document
+  .querySelector(".buttonGroup__button--all")
+  .addEventListener("click", function () {
+    deleteAllCovers();
+  });
+
+document
+  .querySelector(".buttonGroup__button--recent")
+  .addEventListener("click", function () {
+    deleteAllCovers();
+  });
+
+document
+  .querySelector(".buttonGroup__button--2022")
+  .addEventListener("click", function () {
+    deleteAllCovers();
+  });
+
+document
+  .querySelector(".buttonGroup__button--2021")
+  .addEventListener("click", function () {
+    deleteAllCovers();
+  });
+
+//!  122221.2014    MAIN SEQUENCE
 
 function main() {
   duplicateJsonArray();

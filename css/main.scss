@@ -195,9 +195,12 @@ text-align: center;
 
   background-color: green;
   color: white;
-
-    
 }
+}
+
+.buttonGroup__button:hover {
+  background-color: #ccc;
+  transition: .3s;
 }
 
  #gridContainer {
