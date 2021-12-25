@@ -17,6 +17,10 @@ let year = 0;
 let oldYear = 0;
 let newYear = 0;
 requestedYear = 0;
+
+let button2018 = 2018;
+let button2019 = 2019;
+let button2020 = 2020;
 let button2021 = 2021;
 let button2022 = 2022;
 let radioButtons = { All: false, Recent: false, 2022: false, 2021: true };
@@ -155,6 +159,45 @@ document.querySelector("#myRadio4").addEventListener("click", function () {
   for (var j = 0; j < allYears.length; j++) {
     //    debugger;
     if (button2021 === Number(allYears[j].year)) {
+      filteredYears.push(allYears[j]);
+      c(filteredYears.length);
+      produceFilteredCovers();
+    }
+  }
+});
+
+document.querySelector("#myRadio5").addEventListener("click", function () {
+  //  deleteAllCovers();
+  filteredYears.length = 0;
+  for (var j = 0; j < allYears.length; j++) {
+    //    debugger;
+    if (button2020 === Number(allYears[j].year)) {
+      filteredYears.push(allYears[j]);
+      c(filteredYears.length);
+      produceFilteredCovers();
+    }
+  }
+});
+
+document.querySelector("#myRadio6").addEventListener("click", function () {
+  //  deleteAllCovers();
+  filteredYears.length = 0;
+  for (var j = 0; j < allYears.length; j++) {
+    //    debugger;
+    if (button2019 === Number(allYears[j].year)) {
+      filteredYears.push(allYears[j]);
+      c(filteredYears.length);
+      produceFilteredCovers();
+    }
+  }
+});
+
+document.querySelector("#myRadio7").addEventListener("click", function () {
+  //  deleteAllCovers();
+  filteredYears.length = 0;
+  for (var j = 0; j < allYears.length; j++) {
+    //    debugger;
+    if (button2018 === Number(allYears[j].year)) {
       filteredYears.push(allYears[j]);
       c(filteredYears.length);
       produceFilteredCovers();

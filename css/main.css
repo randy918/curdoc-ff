@@ -165,20 +165,19 @@ body {
 }
 
 .radio__input:checked + .radio__label {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#73e67a), to(#61cc4b));
-  background-image: linear-gradient(to bottom, #73e67a, #61cc4b);
+  background: white;
   color: black;
 }
 
 .radio__label {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#34d976), to(#2baab8));
-  background-image: linear-gradient(to bottom, #34d976, #2baab8);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#068639), to(#046d79));
+  background-image: linear-gradient(to bottom, #068639, #046d79);
   border-radius: 2rem;
   cursor: pointer;
   margin: 0 .3rem;
   padding: 0.25em 1.02em;
   font-family: Arial;
-  font-size: 1.51vw;
+  font-size: clamp(0.75rem, 1.51vw, 1.25rem);
   font-weight: 200;
   letter-spacing: .05rem;
 }
