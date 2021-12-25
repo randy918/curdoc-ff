@@ -16,10 +16,11 @@ const years = [];
 let year = 0;
 let oldYear = 0;
 let newYear = 0;
-let requestedYear = 2022;
+requestedYear = 0;
 let button2021 = 2021;
 let button2022 = 2022;
 let radioButtons = { All: false, Recent: false, 2022: false, 2021: true };
+let currentButton = "Recent";
 
 const digitsInYear = 4;
 
@@ -33,6 +34,9 @@ const init = function () {
   createYearProperties();
 
   createRangeOfYears();
+  filteredYears = allYears.slice();
+  filteredYears.length = 12;
+  produceFilteredCovers();
 };
 
 const duplicateJsonArray = function () {
@@ -133,7 +137,7 @@ document.querySelector("#myRadio2").addEventListener("click", function () {
 });
 
 document.querySelector("#myRadio3").addEventListener("click", function () {
-  deleteAllCovers();
+  //  deleteAllCovers();
   filteredYears.length = 0;
   for (var j = 0; j < allYears.length; j++) {
     //    debugger;
@@ -146,8 +150,7 @@ document.querySelector("#myRadio3").addEventListener("click", function () {
 });
 
 document.querySelector("#myRadio4").addEventListener("click", function () {
-  deleteAllCovers();
-  deleteAllCovers();
+  //  deleteAllCovers();
   filteredYears.length = 0;
   for (var j = 0; j < allYears.length; j++) {
     //    debugger;
