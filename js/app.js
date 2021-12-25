@@ -119,53 +119,45 @@ const deleteAllCovers = function () {
 
 //! . 122221.2013     EVENT LISTENERS
 //todo duplicate the array,  dont iterate
-document
-  .querySelector(".buttonGroup__button--all")
-  .addEventListener("click", function () {
-    filteredYears.length = 0;
-    filteredYears = allYears.slice();
-    produceFilteredCovers();
-  });
+document.querySelector("#myRadio1").addEventListener("click", function () {
+  filteredYears.length = 0;
+  filteredYears = allYears.slice();
+  produceFilteredCovers();
+});
 
 //todo duplicate the array,  use first 12
-document
-  .querySelector(".buttonGroup__button--recent")
-  .addEventListener("click", function () {
-    filteredYears = allYears.slice();
-    filteredYears.length = 12;
-    produceFilteredCovers();
-  });
+document.querySelector("#myRadio2").addEventListener("click", function () {
+  filteredYears = allYears.slice();
+  filteredYears.length = 12;
+  produceFilteredCovers();
+});
 
-document
-  .querySelector(".buttonGroup__button--2022")
-  .addEventListener("click", function () {
-    deleteAllCovers();
-    filteredYears.length = 0;
-    for (var j = 0; j < allYears.length; j++) {
-      //    debugger;
-      if (button2022 === Number(allYears[j].year)) {
-        filteredYears.push(allYears[j]);
-        c(filteredYears.length);
-        produceFilteredCovers();
-      }
+document.querySelector("#myRadio3").addEventListener("click", function () {
+  deleteAllCovers();
+  filteredYears.length = 0;
+  for (var j = 0; j < allYears.length; j++) {
+    //    debugger;
+    if (button2022 === Number(allYears[j].year)) {
+      filteredYears.push(allYears[j]);
+      c(filteredYears.length);
+      produceFilteredCovers();
     }
-  });
+  }
+});
 
-document
-  .querySelector(".buttonGroup__button--2021")
-  .addEventListener("click", function () {
-    deleteAllCovers();
-    deleteAllCovers();
-    filteredYears.length = 0;
-    for (var j = 0; j < allYears.length; j++) {
-      //    debugger;
-      if (button2021 === Number(allYears[j].year)) {
-        filteredYears.push(allYears[j]);
-        c(filteredYears.length);
-        produceFilteredCovers();
-      }
+document.querySelector("#myRadio4").addEventListener("click", function () {
+  deleteAllCovers();
+  deleteAllCovers();
+  filteredYears.length = 0;
+  for (var j = 0; j < allYears.length; j++) {
+    //    debugger;
+    if (button2021 === Number(allYears[j].year)) {
+      filteredYears.push(allYears[j]);
+      c(filteredYears.length);
+      produceFilteredCovers();
     }
-  });
+  }
+});
 
 //!  122221.2014    MAIN SEQUENCE
 

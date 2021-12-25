@@ -28,6 +28,11 @@
  * {
    box-sizing: border-box;
  }
+ html {
+
+  font-size: 16px;
+
+ }
 
  h1 {
    color: white;
@@ -176,54 +181,54 @@ width: 75%;
 
 }
 
-.buttonGroup  {
-text-align: center;
+
+
+.radio {
+  overflow: hidden;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+
+  color: #ffffff;
+//  padding: 1em;
+  text-decoration: none;
+  text-align: center;
   display: block;
 
   margin: 1rem;
 
-&__button {
-
-  border-radius: .25rem;
-  border-style: none;
-
-  margin: 0 .25rem 0 .25rem;
-  padding: .4rem 1rem 0 1rem;
-
-  font-size: 1.5rem;
-  line-height: 1;
-
-  background-color: green;
-  color: white;
+&__input {
+  display: none;
 }
-}
-
-.buttonGroup__button {  background: #34d976;
-  background-image: -webkit-linear-gradient(top, #34d976, #2baab8);
-  background-image: -moz-linear-gradient(top, #34d976, #2baab8);
-  background-image: -ms-linear-gradient(top, #34d976, #2baab8);
-  background-image: -o-linear-gradient(top, #34d976, #2baab8);
-  background-image: linear-gradient(to bottom, #34d976, #2baab8);
-  -webkit-border-radius: 28;
-  -moz-border-radius: 28;
-  border-radius: 28px;
-  font-family: Arial;
-  color: #ffffff;
-  font-size: 20px;
-  padding: 10px 20px 10px 20px;
-  text-decoration: none;};
-
-.buttonGroup__button:hover {
-  background: #73e67a;
-  background-image: -webkit-linear-gradient(top, #73e67a, #61cc4b);
-  background-image: -moz-linear-gradient(top, #73e67a, #61cc4b);
-  background-image: -ms-linear-gradient(top, #73e67a, #61cc4b);
-  background-image: -o-linear-gradient(top, #73e67a, #61cc4b);
+&__input:hover + &__label {
   background-image: linear-gradient(to bottom, #73e67a, #61cc4b);
-  text-decoration: none;
-  transition: .3s;
+color: black;
+transition: .3s;
 }
 
+
+
+&__input:checked + &__label {
+
+  background-image: linear-gradient(to bottom, #73e67a, #61cc4b);
+color: black;
+
+}
+
+&__label {
+  background-image: linear-gradient(to bottom, #34d976, #2baab8);
+  border-radius: 2rem;
+  cursor: pointer;
+  margin: 0 .3rem;
+  padding: 0.25em 1.02em;
+  
+  font-family: Arial;
+//  font-size: 1.2rem;
+  font-size: 1.51vw;
+  font-weight: 200;
+  letter-spacing: .05rem;
+
+  
+}
+}
 
 
  #gridContainer {

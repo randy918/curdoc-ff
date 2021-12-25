@@ -3,6 +3,10 @@
           box-sizing: border-box;
 }
 
+html {
+  font-size: 16px;
+}
+
 h1 {
   color: white;
   font-size: 30px;
@@ -137,42 +141,46 @@ body {
   width: 75%;
 }
 
-.buttonGroup {
+.radio {
+  overflow: hidden;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  color: #ffffff;
+  text-decoration: none;
   text-align: center;
   display: block;
   margin: 1rem;
 }
 
-.buttonGroup__button {
-  border-radius: .25rem;
-  border-style: none;
-  margin: 0 .25rem 0 .25rem;
-  padding: .4rem 1rem 0 1rem;
-  font-size: 1.5rem;
-  line-height: 1;
-  background-color: green;
-  color: white;
+.radio__input {
+  display: none;
 }
 
-.buttonGroup__button {
-  background: #34d976;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#34d976), to(#2baab8));
-  background-image: linear-gradient(to bottom, #34d976, #2baab8);
-  border-radius: 28px;
-  font-family: Arial;
-  color: #ffffff;
-  font-size: 20px;
-  padding: 10px 20px 10px 20px;
-  text-decoration: none;
-}
-
-.buttonGroup__button:hover {
-  background: #73e67a;
+.radio__input:hover + .radio__label {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#73e67a), to(#61cc4b));
   background-image: linear-gradient(to bottom, #73e67a, #61cc4b);
-  text-decoration: none;
+  color: black;
   -webkit-transition: .3s;
   transition: .3s;
+}
+
+.radio__input:checked + .radio__label {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#73e67a), to(#61cc4b));
+  background-image: linear-gradient(to bottom, #73e67a, #61cc4b);
+  color: black;
+}
+
+.radio__label {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#34d976), to(#2baab8));
+  background-image: linear-gradient(to bottom, #34d976, #2baab8);
+  border-radius: 2rem;
+  cursor: pointer;
+  margin: 0 .3rem;
+  padding: 0.25em 1.02em;
+  font-family: Arial;
+  font-size: 1.51vw;
+  font-weight: 200;
+  letter-spacing: .05rem;
 }
 
 #gridContainer {
