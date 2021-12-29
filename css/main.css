@@ -80,7 +80,7 @@ body {
   padding: 3vh 3vw 3vh 3vw;
 }
 
-.main-logo {
+.red-logo {
   width: clamp(100px, 50%, 500px);
 }
 
