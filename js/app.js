@@ -25,12 +25,14 @@ let button2021 = 2021;
 let button2022 = 2022;
 let radioButtons = { All: false, Recent: false, 2022: false, 2021: true };
 let currentButton = "Recent";
+let initFlag = false;
 
 const digitsInYear = 4;
 
 //!  21921.1621dddd----------------FUNCTIONS
 
 const init = function () {
+  initFlag = true;
   duplicateJsonArray();
 
   createIssueProperties();
@@ -81,13 +83,10 @@ const createRangeOfYears = function () {
   }
 };
 
-const createLitButton = function () {
-  //todo  121921.1637     create buttons from Range of Years organically
-};
-
 const createFilteredYearArray = function () {
   for (var j = 0; j < allYears.length; j++) {
     //    debugger;
+    c(requestedYear);
     if (requestedYear === Number(allYears[j].year)) {
       filteredYears.push(allYears[j]);
       c(filteredYears.length);
@@ -121,13 +120,10 @@ const produceFilteredCovers = function () {
   }
 };
 
-const deleteAllCovers = function () {
-  $(".box").remove();
-};
-
 //! . 122221.2013     EVENT LISTENERS
 //todo duplicate the array,  dont iterate
 document.querySelector("#myRadio1").addEventListener("click", function () {
+  requestedYear = "All";
   filteredYears.length = 0;
   filteredYears = allYears.slice();
   produceFilteredCovers();
@@ -135,6 +131,7 @@ document.querySelector("#myRadio1").addEventListener("click", function () {
 
 //todo duplicate the array,  use first 12
 document.querySelector("#myRadio2").addEventListener("click", function () {
+  requestedYear = "Recent";
   filteredYears = allYears.slice();
   filteredYears.length = 12;
   produceFilteredCovers();
@@ -142,6 +139,7 @@ document.querySelector("#myRadio2").addEventListener("click", function () {
 
 document.querySelector("#myRadio3").addEventListener("click", function () {
   //  deleteAllCovers();
+  requestedYear = "2022";
   filteredYears.length = 0;
   for (var j = 0; j < allYears.length; j++) {
     //    debugger;
@@ -155,6 +153,7 @@ document.querySelector("#myRadio3").addEventListener("click", function () {
 
 document.querySelector("#myRadio4").addEventListener("click", function () {
   //  deleteAllCovers();
+  requestedYear = "2021";
   filteredYears.length = 0;
   for (var j = 0; j < allYears.length; j++) {
     //    debugger;
@@ -168,6 +167,7 @@ document.querySelector("#myRadio4").addEventListener("click", function () {
 
 document.querySelector("#myRadio5").addEventListener("click", function () {
   //  deleteAllCovers();
+  requestedYear = "2020";
   filteredYears.length = 0;
   for (var j = 0; j < allYears.length; j++) {
     //    debugger;
@@ -180,7 +180,7 @@ document.querySelector("#myRadio5").addEventListener("click", function () {
 });
 
 document.querySelector("#myRadio6").addEventListener("click", function () {
-  //  deleteAllCovers();
+  requestedYear = "2019";
   filteredYears.length = 0;
   for (var j = 0; j < allYears.length; j++) {
     //    debugger;
@@ -193,7 +193,8 @@ document.querySelector("#myRadio6").addEventListener("click", function () {
 });
 
 document.querySelector("#myRadio7").addEventListener("click", function () {
-  //  deleteAllCovers();
+  requestedYear = "2018";
+
   filteredYears.length = 0;
   for (var j = 0; j < allYears.length; j++) {
     //    debugger;
@@ -209,14 +210,10 @@ document.querySelector("#myRadio7").addEventListener("click", function () {
 
 function main() {
   init();
-
-  createLitButton();
-
-  createFilteredYearArray();
-
-  produceFilteredCovers();
+  c("hello");
 }
 
 window.onload = function () {
   main();
+  document.querySelector("#myRadio2").checked = true;
 };
