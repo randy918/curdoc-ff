@@ -8,6 +8,7 @@ let downloadTitle;
 let num;
 let allYears = [];
 let filteredYears = [];
+let reverseFilteredYears = [];
 
 const years = [];
 
@@ -94,6 +95,11 @@ const createFilteredYearArray = function () {
   }
 };
 
+const reverseFilteredCovers = function () {
+  reverseFilteredYears = filteredYears.reverse();
+  filteredYears = reverseFilteredYears;
+};
+
 const produceFilteredCovers = function () {
   for (var i = 0; i < filteredYears.length; i++) {
     downloadTitle = filteredYears[i].downloadTitle;
@@ -126,7 +132,7 @@ document.querySelector("#myRadio1").addEventListener("click", function () {
   requestedYear = "All";
   filteredYears.length = 0;
   filteredYears = allYears.slice();
-  produceFilteredCovers();
+  produceFilteredCovers(filteredYears);
 });
 
 //todo duplicate the array,  use first 12
@@ -145,10 +151,12 @@ document.querySelector("#myRadio3").addEventListener("click", function () {
     //    debugger;
     if (button2022 === Number(allYears[j].year)) {
       filteredYears.push(allYears[j]);
+
       c(filteredYears.length);
-      produceFilteredCovers();
     }
   }
+  reverseFilteredCovers();
+  produceFilteredCovers();
 });
 
 document.querySelector("#myRadio4").addEventListener("click", function () {
@@ -160,9 +168,10 @@ document.querySelector("#myRadio4").addEventListener("click", function () {
     if (button2021 === Number(allYears[j].year)) {
       filteredYears.push(allYears[j]);
       c(filteredYears.length);
-      produceFilteredCovers();
     }
   }
+  reverseFilteredCovers();
+  produceFilteredCovers();
 });
 
 document.querySelector("#myRadio5").addEventListener("click", function () {
@@ -174,9 +183,10 @@ document.querySelector("#myRadio5").addEventListener("click", function () {
     if (button2020 === Number(allYears[j].year)) {
       filteredYears.push(allYears[j]);
       c(filteredYears.length);
-      produceFilteredCovers();
     }
   }
+  reverseFilteredCovers();
+  produceFilteredCovers();
 });
 
 document.querySelector("#myRadio6").addEventListener("click", function () {
@@ -187,9 +197,10 @@ document.querySelector("#myRadio6").addEventListener("click", function () {
     if (button2019 === Number(allYears[j].year)) {
       filteredYears.push(allYears[j]);
       c(filteredYears.length);
-      produceFilteredCovers();
     }
   }
+  reverseFilteredCovers();
+  produceFilteredCovers();
 });
 
 document.querySelector("#myRadio7").addEventListener("click", function () {
@@ -201,9 +212,10 @@ document.querySelector("#myRadio7").addEventListener("click", function () {
     if (button2018 === Number(allYears[j].year)) {
       filteredYears.push(allYears[j]);
       c(filteredYears.length);
-      produceFilteredCovers();
     }
   }
+  reverseFilteredCovers();
+  produceFilteredCovers();
 });
 
 //!  122221.2014    MAIN SEQUENCE
