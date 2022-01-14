@@ -84,17 +84,6 @@ const createRangeOfYears = function () {
   }
 };
 
-const createFilteredYearArray = function () {
-  for (var j = 0; j < allYears.length; j++) {
-    //    debugger;
-    c(requestedYear);
-    if (requestedYear === Number(allYears[j].year)) {
-      filteredYears.push(allYears[j]);
-      c(filteredYears.length);
-    }
-  }
-};
-
 const reverseFilteredCovers = function () {
   reverseFilteredYears = filteredYears.reverse();
   filteredYears = reverseFilteredYears;
@@ -144,11 +133,9 @@ document.querySelector("#myRadio2").addEventListener("click", function () {
 });
 
 document.querySelector("#myRadio3").addEventListener("click", function () {
-  //  deleteAllCovers();
   requestedYear = "2022";
   filteredYears.length = 0;
   for (var j = 0; j < allYears.length; j++) {
-    //    debugger;
     if (button2022 === Number(allYears[j].year)) {
       filteredYears.push(allYears[j]);
 
