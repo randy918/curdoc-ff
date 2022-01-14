@@ -43,13 +43,13 @@ h3 {
 }
 
 .yellow {
-  color: #ddac5e;
+  color: #fdf79f;
   margin-bottom: 0;
   padding-bottom: 0;
 }
 
 .bgyellow {
-  background-color: #ddac5e;
+  background-color: #fdf79f;
 }
 
 #tvcHeader {
@@ -226,14 +226,14 @@ body {
 
 .btn:hover {
   background-color: #2b3238;
-  color: #ddac5e;
+  color: #fdf79f;
 }
 
 .btn2 {
   background-color: #c22f33;
   border: none;
   width: 85px;
-  color: #ddac5e;
+  color: #fdf79f;
   text-align: center;
   font-size: 16px;
   -webkit-transition: 0.3s;
@@ -242,7 +242,7 @@ body {
 
 .btn2:hover {
   background-color: #2b3238;
-  color: #ddac5e;
+  color: #fdf79f;
 }
 
 /*! SASS FUNCTIONS */
