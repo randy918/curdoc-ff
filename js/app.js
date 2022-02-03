@@ -164,6 +164,14 @@ document.querySelector("#myRadio7").addEventListener("click", function () {
   assembleCurrentYear(2018);
 });
 
+document.querySelector("#myRadio8").addEventListener("click", function () {
+  assembleCurrentYear(2018);
+});
+
+document.querySelector("#myRadio9").addEventListener("click", function () {
+  assembleCurrentYear(2018);
+});
+
 //!  122221.2014    MAIN SEQUENCE
 
 function main() {
