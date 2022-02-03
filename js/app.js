@@ -19,6 +19,8 @@ let oldYear = 0;
 let newYear = 0;
 let requestedYear = 0;
 
+let button2016 = 2016;
+let button2017 = 2017;
 let button2018 = 2018;
 let button2019 = 2019;
 let button2020 = 2020;
@@ -152,24 +154,13 @@ document.querySelector("#myRadio4").addEventListener("click", function () {
   assembleCurrentYear(2021);
 });
 
-document.querySelector("#myRadio5").addEventListener("click", function () {
-  assembleCurrentYear(2020);
-});
+document.querySelector("#myRadio5").addEventListener("click", function () {});
 
-document.querySelector("#myRadio6").addEventListener("click", function () {
-  assembleCurrentYear(2019);
-});
-
-document.querySelector("#myRadio7").addEventListener("click", function () {
-  assembleCurrentYear(2018);
-});
-
-document.querySelector("#myRadio8").addEventListener("click", function () {
-  assembleCurrentYear(2018);
-});
-
+document.querySelector("#myRadio6").addEventListener("click", function () {});
+document.querySelector("#myRadio7").addEventListener("click", function () {});
+document.querySelector("#myRadio8").addEventListener("click", function () {});
 document.querySelector("#myRadio9").addEventListener("click", function () {
-  assembleCurrentYear(2018);
+  assembleCurrentYear(2019);
 });
 
 //!  122221.2014    MAIN SEQUENCE
