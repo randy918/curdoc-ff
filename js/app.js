@@ -154,13 +154,21 @@ document.querySelector("#myRadio4").addEventListener("click", function () {
   assembleCurrentYear(2021);
 });
 
-document.querySelector("#myRadio5").addEventListener("click", function () {});
+document.querySelector("#myRadio5").addEventListener("click", function () {
+  assembleCurrentYear(2020);
+});
 
-document.querySelector("#myRadio6").addEventListener("click", function () {});
-document.querySelector("#myRadio7").addEventListener("click", function () {});
-document.querySelector("#myRadio8").addEventListener("click", function () {});
-document.querySelector("#myRadio9").addEventListener("click", function () {
+document.querySelector("#myRadio6").addEventListener("click", function () {
   assembleCurrentYear(2019);
+});
+document.querySelector("#myRadio7").addEventListener("click", function () {
+  assembleCurrentYear(2018);
+});
+document.querySelector("#myRadio8").addEventListener("click", function () {
+  assembleCurrentYear(2017);
+});
+document.querySelector("#myRadio9").addEventListener("click", function () {
+  assembleCurrentYear(2016);
 });
 
 //!  122221.2014    MAIN SEQUENCE
