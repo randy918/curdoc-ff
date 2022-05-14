@@ -1,6 +1,6 @@
 const ff = [
   {
-    downloadTitle: "floral-finance-may-2022",
+    downloadTitle: "floral-finance-mayo-2022",
     "2": "from the publishers: effective collections",
     "2": "thinking on the margin: a lesson from hockey",
     "4": "$776,487 in sales: $2,830 in profit",

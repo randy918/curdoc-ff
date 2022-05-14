@@ -19,6 +19,17 @@ const ff = [
     "8": "inquiries & answers: order accuracy; training new-hires",
     "8": "norms: lost sales",
   },
+  {
+    downloadTitle: "floral-finance-april-2022",
+    "2": "from the publishers: collecting accounts",
+    "2": "do retail florists make money?: a path to profits",
+    "4": "you & your corporation: how’s the relationship going?",
+    "6": "money smarts: savings strategies",
+    "7": "by the books: gift card accounting: do it right",
+    "8": "inquiries & answers: order accuracy; training new-hires",
+    "8": "norms: lost sales",
+  },
+  
  {
     downloadTitle: "floral-finance-march-2022",
     "2": "from the publishers: success",
@@ -49,12 +60,17 @@ const ff = [
     "8": "norms: monthly sales",
   },
 
-
+  { downloadTitle: "floral-finance-april-2022" },
+  { downloadTitle: "floral-finance-march-2022" },
+  { downloadTitle: "floral-finance-february-2022" },
+  { downloadTitle: "floral-finance-january-2022" },
   { downloadTitle: "floral-finance-december-2021" },
   { downloadTitle: "floral-finance-november-2021" },
   { downloadTitle: "floral-finance-october-2021" },
   { downloadTitle: "floral-finance-september-2021" },
+  { downloadTitle: "floral-finance-september-2021" },
   { downloadTitle: "floral-finance-august-2021" },
+  { downloadTitle: "floral-finance-july-2021" },
   { downloadTitle: "floral-finance-july-2021" },
   { downloadTitle: "floral-finance-june-2021" },
   { downloadTitle: "floral-finance-may-2021" },
