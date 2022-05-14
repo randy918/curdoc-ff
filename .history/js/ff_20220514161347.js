@@ -1,5 +1,5 @@
 ff = [
-  { "downloadTitle": "floral-finance-may-2022" },
+  { """downloadTitle""": "floral-finance-may-2022" },
   { "downloadTitle": "floral-finance-april-2022" },
   { "downloadTitle": "floral-finance-march-2022" },
   { "downloadTitle": "floral-finance-february-2022" },
@@ -8,9 +8,7 @@ ff = [
   { "downloadTitle": "floral-finance-november-2021" },
   { "downloadTitle": "floral-finance-october-2021" },
   { "downloadTitle": "floral-finance-september-2021" },
-  { "downloadTitle": "floral-finance-september-2021" },
   { "downloadTitle": "floral-finance-august-2021" },
-  { "downloadTitle": "floral-finance-july-2021" },
   { "downloadTitle": "floral-finance-july-2021" },
   { "downloadTitle": "floral-finance-june-2021" },
   { "downloadTitle": "floral-finance-may-2021" },
