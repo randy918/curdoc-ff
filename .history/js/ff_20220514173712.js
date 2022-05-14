@@ -1,4 +1,4 @@
-const ff = [
+cff = [
   {
     downloadTitle: "floral-finance-may-2022",
     "2": "from the publishers: effective collections",

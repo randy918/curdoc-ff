@@ -1,4 +1,4 @@
-const ff = [
+ff = [
   {
     downloadTitle: "floral-finance-may-2022",
     "2": "from the publishers: effective collections",
@@ -20,7 +20,7 @@ const ff = [
     "8": "norms: lost sales",
   },
   {
-    downloadTitle: "floral-finance-aprilplus-2022",
+    downloadTitle: "floral-finance-april-2022",
     "2": "from the publishers: collecting accounts",
     "2": "do retail florists make money?: a path to profits",
     "4": "you & your corporation: how’s the relationship going?",
