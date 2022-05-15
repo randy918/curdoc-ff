@@ -13,7 +13,7 @@ const ff = [
     downloadTitle: "floral-finance-april-2022",
     "2": "from the publishers: collecting accounts",
     "2": "do retail florists make money?: a path to profits",
-    "4": "you & your corporation: how's the relationship going?",
+    "4": "you & your corporation: hows the relationship going?",
     "6": "money smarts: savings strategies",
     "7": "by the books: gift card accounting: do it right",
     "8": "inquiries & answers: order accuracy; training new-hires",
