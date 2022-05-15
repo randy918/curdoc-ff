@@ -178,7 +178,7 @@ document.querySelector("#myRadio10").addEventListener("click", function () {
   assembleCurrentYear(2015);
 });
 document.querySelector("#myRadio11").addEventListener("click", function () {
-  console.log("doobie");
+  console.log();
 });
 
 

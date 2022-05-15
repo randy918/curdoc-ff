@@ -1,10 +1,11 @@
 
 
 console.log("Report: " + ff.length + " records");// seems ace c5-14-22.1745 
-console.log("Self function test: " + r(8, 9))//my functions test
+console.log("Ser(8, 9))//my functions test
 
 //!  12-22-21.2222 -----------------VARIABLES
 
+console.log("hello");
 
 let issue;
 let downloadTitle;
@@ -177,10 +178,6 @@ document.querySelector("#myRadio9").addEventListener("click", function () {
 document.querySelector("#myRadio10").addEventListener("click", function () {
   assembleCurrentYear(2015);
 });
-document.querySelector("#myRadio11").addEventListener("click", function () {
-  console.log("doobie");
-});
-
 
 //!  122221.2014    MAIN SEQUENCE
 

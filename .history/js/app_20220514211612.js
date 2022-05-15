@@ -177,10 +177,6 @@ document.querySelector("#myRadio9").addEventListener("click", function () {
 document.querySelector("#myRadio10").addEventListener("click", function () {
   assembleCurrentYear(2015);
 });
-document.querySelector("#myRadio11").addEventListener("click", function () {
-  console.log("doobie");
-});
-
 
 //!  122221.2014    MAIN SEQUENCE
 
