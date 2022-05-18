@@ -153,6 +153,7 @@ const createSearchBar = function ()  {
             />
     </div>`;
 
+
 }
 
 const assembleCurrentStories = function () {

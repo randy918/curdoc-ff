@@ -142,16 +142,8 @@ const produceFilteredCovers = function () {
 //!  51522.1100         SEARCHBAR FUNCTIONS
 
 const createSearchBar = function ()  {
+
     console.log("createSearchBar function");
-    document.getElementById("gridContainer").innerHTML = `
-    <div id = "searchWrapper">
-        <input
-            type = "text"
-            name = "searchBar"
-            id = "searchBar"
-            placeholder = "Search Story Titles"
-            />
-    </div>`;
 
 }
 
@@ -161,13 +153,6 @@ const assembleCurrentStories = function () {
 
 
 };
-const produceCurrentStories = function () {
-
-    console.log("produceCurrentStories function");
-
-
-};
-
 
 
 //! . 122221.2013     EVENT LISTENERS
@@ -202,28 +187,20 @@ document.querySelector("#myRadio5").addEventListener("click", function () {
 document.querySelector("#myRadio6").addEventListener("click", function () {
   assembleCurrentYear(2019);
 });
-
 document.querySelector("#myRadio7").addEventListener("click", function () {
   assembleCurrentYear(2018);
 });
-
 document.querySelector("#myRadio8").addEventListener("click", function () {
   assembleCurrentYear(2017);
 });
-
 document.querySelector("#myRadio9").addEventListener("click", function () {
   assembleCurrentYear(2016);
 });
-
 document.querySelector("#myRadio10").addEventListener("click", function () {
   assembleCurrentYear(2015);
 });
-
-document.querySelector("#myRadio11").addEventListener("click", function () {
-  createSearchBar ();
-  assembleCurrentStories();
-  produceCurrentStories();
-
+document.querySelector("#myRadio10").addEventListener("click", function () {
+  createSearchBar ;
 });
 
 

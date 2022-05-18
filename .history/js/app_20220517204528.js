@@ -152,6 +152,7 @@ const createSearchBar = function ()  {
             placeholder = "Search Story Titles"
             />
     </div>`;
+    
 
 }
 

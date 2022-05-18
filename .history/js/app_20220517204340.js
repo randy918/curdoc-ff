@@ -150,8 +150,9 @@ const createSearchBar = function ()  {
             name = "searchBar"
             id = "searchBar"
             placeholder = "Search Story Titles"
-            />
+            
     </div>`;
+    `
 
 }
 
