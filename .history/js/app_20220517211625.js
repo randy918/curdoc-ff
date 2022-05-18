@@ -142,7 +142,7 @@ const produceFilteredCovers = function () {
 //!  51522.1100         SEARCHBAR FUNCTIONS
 
 const createSearchBar = function ()  {
-    const searchBar = document.getElementById("searchBar")
+    const searchBar = document.getElement
     console.log("createSearchBar function");
     document.getElementById("gridContainer").innerHTML = `
     <div id = "searchWrapper">
