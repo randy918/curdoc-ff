@@ -1,18 +1,6 @@
 const ff = [
-  {
-    downloadTitle: "floral-finance-july-2022",
-    2: [
-      "from the publishers: looking back ... looking ahead",
-      "cash flow: now is the time to plan",
-    ],
-    4: "cash flow forecasting: knowledge is power",
-    6: "cut your payroll: key to seasoned success",
-    7: "by the books: non-holiday staffing analysis—know what you can afford",
-    8: [
-      "inquiries & answers: entertaining children; august cash",
-      "norms: shrink",
-    ],
-  },
+  
+
   {
     downloadTitle: "floral-finance-june-2022",
     2: [

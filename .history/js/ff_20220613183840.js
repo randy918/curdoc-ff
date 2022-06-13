@@ -1,4 +1,7 @@
 const ff = [
+  
+
+
   {
     downloadTitle: "floral-finance-july-2022",
     2: [
@@ -9,8 +12,8 @@ const ff = [
     6: "cut your payroll: key to seasoned success",
     7: "by the books: non-holiday staffing analysis—know what you can afford",
     8: [
-      "inquiries & answers: entertaining children; august cash",
-      "norms: shrink",
+      "inquiries & answers: entertai; teaching old dogs",
+      "norms: sales from floral",
     ],
   },
   {

@@ -1,30 +1,18 @@
 const ff = [
+  { downloadTitle: "floral-finance-june-2022" },
+  
   {
-    downloadTitle: "floral-finance-july-2022",
+    downloadTitle: "floral-finance-may-2022",
     2: [
-      "from the publishers: looking back ... looking ahead",
-      "cash flow: now is the time to plan",
+      "from the publishers: effective collections",
+      "thinking on the margin: a lesson from hockey",
     ],
-    4: "cash flow forecasting: knowledge is power",
-    6: "cut your payroll: key to seasoned success",
-    7: "by the books: non-holiday staffing analysis—know what you can afford",
+    4: "$776,487 in sales: $2,830 in profit",
+    6: "the family business: family relationships",
+    7: "by the books: your advertising budget—allocating advertising dollars",
     8: [
-      "inquiries & answers: entertaining children; august cash",
-      "norms: shrink",
-    ],
-  },
-  {
-    downloadTitle: "floral-finance-june-2022",
-    2: [
-      "from the publishers: the ethics of payables",
-      "making money in the slow months: can it be done?",
-    ],
-    4: "your business plan: the how & the why",
-    6: "the family business: perks—getting something for nothing",
-    7: "by the books: smart buying—a key to profitability",
-    8: [
-      "inquiries & answers: paid holidays for employees; teaching old dogs",
-      "norms: sales from floral",
+      "inquiries & answers: low-cost mortgages; liability protection",
+      "norms: average discounts",
     ],
   },
   {

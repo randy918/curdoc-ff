@@ -1,4 +1,7 @@
 const ff = [
+  
+
+
   {
     downloadTitle: "floral-finance-july-2022",
     2: [
@@ -7,10 +10,10 @@ const ff = [
     ],
     4: "cash flow forecasting: knowledge is power",
     6: "cut your payroll: key to seasoned success",
-    7: "by the books: non-holiday staffing analysis—know what you can afford",
+    7: "by the books: non-holiday staffing ana—a key to profitability",
     8: [
-      "inquiries & answers: entertaining children; august cash",
-      "norms: shrink",
+      "inquiries & answers: paid holidays for employees; teaching old dogs",
+      "norms: sales from floral",
     ],
   },
   {

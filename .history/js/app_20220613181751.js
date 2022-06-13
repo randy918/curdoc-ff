@@ -141,11 +141,7 @@ const produceFilteredCovers = function () {
 
 //!  61322.1714         QUOTE BASED FUNCTIONS BEGIN
 
-const assembleSearchResults = function () {
 
-    
-
-}
 
 //!  51522.1100         SEARCHBAR FUNCTIONS
 
@@ -208,7 +204,7 @@ document.querySelector("#myRadio10").addEventListener("click", function () {
   assembleCurrentYear(2015);
 });
 document.querySelector("#myRadio11").addEventListener("click", function () {
-  assembleSearchResults("Index");
+  assembleCurrentQuote("Index");
   c("Index button pressed.")
 });
 

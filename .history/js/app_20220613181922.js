@@ -141,11 +141,7 @@ const produceFilteredCovers = function () {
 
 //!  61322.1714         QUOTE BASED FUNCTIONS BEGIN
 
-const assembleSearchResults = function () {
-
-    
-
-}
+const 
 
 //!  51522.1100         SEARCHBAR FUNCTIONS
 
