@@ -132,8 +132,9 @@ const articles = [
   ["0222.7", "by the books: punching in early … staying late"],
   ["0222.8", "inquiries & answers: loss leaders"],
   ["0222.8", "inquiries & answers: coupon power"],
-  ["0222.8", "norms: other expenses"], 
-  ["0122.2", "from the publishers: delegation"],
+  ["0222.8", "norms: other expenses"][
+    ("0122.2", "from the publishers: delegation")
+  ],
   ["0122.2", "your business review: there’s no better time"],
   ["0122.4", "owning your building: is it practical?"],
   ["0122.6", "credit card perks: free airline travel"],
