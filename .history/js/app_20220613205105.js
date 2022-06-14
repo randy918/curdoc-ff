@@ -153,7 +153,7 @@ const createSearchBar = function () {
         type = "text"
         name = "searchBar"
         id = "searchBar"
-        placeholder = "keyword or phrase"
+        placeholder = "keyword or "
     />
         </div>
   `;

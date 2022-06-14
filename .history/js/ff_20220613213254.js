@@ -1,97 +1,97 @@
 const ff = [
   {
     downloadTitle: "floral-finance-july-2022",
-    "line-2": [
+    "lin2: [
       "from the publishers: looking back ... looking ahead",
       "cash flow: now is the time to plan",
     ],
-    "line-4": "cash flow forecasting: knowledge is power",
-    "line-6": "cut your payroll: key to seasoned success",
-    "line-7": "by the books: non-holiday staffing analysis—know what you can afford",
-    "line-8": [
+    "lin4: "cash flow forecasting: knowledge is power",
+    "lin6: "cut your payroll: key to seasoned success",
+    "lin7: "by the books: non-holiday staffing analysis—know what you can afford",
+    "lin8: [
       "inquiries & answers: entertaining children; august cash",
       "norms: shrink",
     ],
   },
   {
     downloadTitle: "floral-finance-june-2022",
-    "line-2": [
+    "lin2: [
       "from the publishers: the ethics of payables",
       "making money in the slow months: can it be done?",
     ],
-    "line-4": "your business plan: the how & the why",
-    "line-6": "the family business: perks—getting something for nothing",
-    "line-7": "by the books: smart buying—a key to profitability",
-    "line-8": [
+    "lin4: "your business plan: the how & the why",
+    "lin6: "the family business: perks—getting something for nothing",
+    "lin7: "by the books: smart buying—a key to profitability",
+    "lin8: [
       "inquiries & answers: paid holidays for employees; teaching old dogs",
       "norms: sales from floral",
     ],
   },
   {
     downloadTitle: "floral-finance-may-2022",
-    "line-2": [
+    "lin2: [
       "from the publishers: effective collections",
       "thinking on the margin: a lesson from hockey",
     ],
-    "line-4": "$776,487 in sales: $2,830 in profit",
-    "line-6": "the family business: family relationships",
-    "line-7": "by the books: your advertising budget—allocating advertising dollars",
-    "line-8": [
+    "lin4: "$776,487 in sales: $2,830 in profit",
+    "lin6: "the family business: family relationships",
+    "lin7: "by the books: your advertising budget—allocating advertising dollars",
+    "lin8: [
       "inquiries & answers: low-cost mortgages; liability protection",
       "norms: average discounts",
     ],
   },
   {
     downloadTitle: "floral-finance-april-2022",
-    "line-2": [
+    "lin2: [
       "from the publishers: collecting accounts",
       "do retail florists make money?: a path to profits",
     ],
-    "line-4": "you & your corporation: how's the relationship going?",
-    "line-6": "money smarts: savings strategies",
-    "line-7": "by the books: gift card accounting: do it right",
-    "line-8": [
+    "lin4: "you & your corporation: how's the relationship going?",
+    "lin6: "money smarts: savings strategies",
+    "lin7: "by the books: gift card accounting: do it right",
+    "lin8: [
       "inquiries & answers: order accuracy; training new-hires",
       "norms: lost sales",
     ],
   },
   {
     downloadTitle: "floral-finance-march-2022",
-    "line-2": [
+    "lin2: [
       "from the publishers: success",
       "house accounts: part 2: the mechanics matter",
     ],
-    "line-4": "evaluating advertising: making your investment pay",
-    "line-6": "by the books: traditional wedding protocol: a checklist for guidance",
-    "line-8": [
+    "lin4: "evaluating advertising: making your investment pay",
+    "lin6: "by the books: traditional wedding protocol: a checklist for guidance",
+    "lin8: [
       "inquiries & answers: shoplifting; part-time space",
       "norms: advertising spend",
     ],
   },
   {
     downloadTitle: "floral-finance-february-2022",
-    "line-2": [
+    "lin2: [
       "from the publishers: inertia",
       "house accounts: part 1: when should you extend credit?",
     ],
-    "line-4": "shop profile: making money in february: one florist’s story",
-    "line-6": "finding the help you need: the challenge—the solution",
-    "line-7": "by the books: punching in early … staying late",
-    "line-8": [
+    "lin4: "shop profile: making money in february: one florist’s story",
+    "lin6: "finding the help you need: the challenge—the solution",
+    "lin7: "by the books: punching in early … staying late",
+    "lin8: [
       "inquiries & answers: loss leaders; coupon power",
       "norms: other expenses",
     ],
   },
   {
     downloadTitle: "floral-finance-january-2022",
-    "line-2": [
+    "lin2: [
       "from the publishers: delegation",
       "your business review: there’s no better time",
     ],
-    "line-4": "owning your building: is it practical?",
-    "line-6": "credit card perks: free airline travel",
-    "line-7": "by the books: tips on managing holiday volume: short on space?",
-    "line-8": [
+    "lin4: "owning your building: is it practical?",
+    "lin: "credit card perks: free airline travel",
+    "lin7: "by the books: tips on managing holiday volume: short on space?",
+    "lin8: [
       "inquiries & answers: cash flow; giving away that old car",
       "norms: monthly sales",
     ],

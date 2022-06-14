@@ -271,19 +271,17 @@ body {
 }
 
 #searchBar {
-display: block;
+
     border-radius: 2rem;
     border: 1px solid #eaeaea;
     cursor: pointer;
     font-family: Arial;
+
     font-size: clamp(0.75rem, 1.51vw, 1.25rem);
     font-weight: 200;
     height: 32px;
+    margin: 0 auto;
     padding: 0.25em 1.02em;
-     margin-right: 12vw;
-    margin-left: 12vw;
-    width:70vw;
-
 }
 
 #searchWrapper {
