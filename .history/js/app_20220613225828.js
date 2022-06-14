@@ -33,7 +33,6 @@ let button2022 = 2022;
 let radioButtons = { All: false, Recent: false, 2022: false, 2021: true };
 let currentButton = "Recent";
 let initFlag = false;
-let searchPhrase = "";
 
 const digitsInYear = 4;
 let storyList = [];
@@ -163,16 +162,9 @@ const createSearchBar = function () {
         </div>
   `;
   //const charactersList = document.getElementById("charactersList");
-
   const searchBar = document.getElementById("searchBar");
-
   searchBar.addEventListener("keyup", (e) => {
-    searchPhrase = (e.target.value);
-    // storyList = ff.filter(searchPhrase => searchPhrase.includes("from"));
-    c(searchPhrase);
-   let resultArray = ff.filter
-
-
+    console.log(e.target.value);
   });
 };
 

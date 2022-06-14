@@ -167,12 +167,9 @@ const createSearchBar = function () {
   const searchBar = document.getElementById("searchBar");
 
   searchBar.addEventListener("keyup", (e) => {
-    searchPhrase = (e.target.value);
-    // storyList = ff.filter(searchPhrase => searchPhrase.includes("from"));
-    c(searchPhrase);
-   let resultArray = ff.filter
-
-
+    console.log(e.target.value);
+    console.log(e.target.value);
+    
   });
 };
 
