@@ -160,7 +160,7 @@ const createSearchBar = function () {
         type = "text"
         name = "searchBar"
         id = "searchBar"
-        placeholder = "word or phrase"
+        placeholder = "keyword or phrase"
     />
         </div>
   `;
@@ -180,7 +180,7 @@ const createSearchBar = function () {
 
 const assembleSearchResults = function () {
 
-    console.log("assembleSearchResults function");
+    
 
 }
 

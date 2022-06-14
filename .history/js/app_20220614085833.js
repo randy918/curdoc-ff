@@ -160,7 +160,7 @@ const createSearchBar = function () {
         type = "text"
         name = "searchBar"
         id = "searchBar"
-        placeholder = "word or phrase"
+        placeholder = "keyword or phrase"
     />
         </div>
   `;
@@ -172,7 +172,7 @@ const createSearchBar = function () {
     searchPhrase = (e.target.value);
     // storyList = ff.filter(searchPhrase => searchPhrase.includes("from"));
     c(searchPhrase);
-  
+   let resultArray = ff.filter
 
 
   });
@@ -180,7 +180,7 @@ const createSearchBar = function () {
 
 const assembleSearchResults = function () {
 
-    console.log("assembleSearchResults function");
+    
 
 }
 
