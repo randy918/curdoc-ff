@@ -38,9 +38,6 @@ const digitsInYear = 4;
 
 
 
-
-
-
 //!  21921.1621dddd----------------STORY COLLECTI
 
 
@@ -158,11 +155,7 @@ const createSearchBar = function () {
     />
         </div>
   `;
-  //const charactersList = document.getElementById("charactersList");
-  const searchBar = document.getElementById("searchBar");
-  searchBar.addEventListener("keyup", (e) => {
-    console.log(e.target.value);
-  });
+  
 };
 
 const assembleSearchResults = function () {

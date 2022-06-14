@@ -160,8 +160,9 @@ const createSearchBar = function () {
   `;
   //const charactersList = document.getElementById("charactersList");
   const searchBar = document.getElementById("searchBar");
+  c(searchBar);
   searchBar.addEventListener("keyup", (e) => {
-    console.log(e.target.value);
+    console.log(e);
   });
 };
 

@@ -36,7 +36,8 @@ let initFlag = false;
 
 const digitsInYear = 4;
 
-
+const charactersList = document.getElementById('charactersList');
+const searchBar = document.getElementById('searchBar');
 
 
 
@@ -158,10 +159,8 @@ const createSearchBar = function () {
     />
         </div>
   `;
-  //const charactersList = document.getElementById("charactersList");
-  const searchBar = document.getElementById("searchBar");
-  searchBar.addEventListener("keyup", (e) => {
-    console.log(e.target.value);
+  searchBar.addEventListener("keyUp", (e) => {
+    c(e);
   });
 };
 

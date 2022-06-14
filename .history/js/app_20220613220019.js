@@ -35,10 +35,7 @@ let currentButton = "Recent";
 let initFlag = false;
 
 const digitsInYear = 4;
-
-
-
-
+const charactersList = document.getElementById('charactersList');''
 
 
 //!  21921.1621dddd----------------STORY COLLECTI
@@ -158,11 +155,7 @@ const createSearchBar = function () {
     />
         </div>
   `;
-  //const charactersList = document.getElementById("charactersList");
-  const searchBar = document.getElementById("searchBar");
-  searchBar.addEventListener("keyup", (e) => {
-    console.log(e.target.value);
-  });
+  
 };
 
 const assembleSearchResults = function () {

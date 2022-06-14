@@ -89,7 +89,7 @@ const ff = [
       "your business review: there’s no better time",
     ],
     line4: "owning your building: is it practical?",
-    line6: "credit card perks: free airline travel",
+    line: "credit card perks: free airline travel",
     line7: "by the books: tips on managing holiday volume: short on space?",
     line8: [
       "inquiries & answers: cash flow; giving away that old car",
