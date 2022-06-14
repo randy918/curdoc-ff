@@ -168,11 +168,8 @@ const assembleSearchResults = function () {
 
 //!  51522.1100         SEARCHBAR FUNCTIONS
 
-const deleteSearchBar = function()
- { 
-  document.getElementById("searchContainer").innerHTML = `
-   `;
-}
+
+
 const assembleCurrentStories = function () {
 
     console.log("assembleCurrentStories function");
@@ -184,7 +181,8 @@ const assembleCurrentStories = function () {
 //! . 122221.2013     EVENT LISTENERS
 //todo duplicate the array,  dont iterate
 document.querySelector("#myRadio1").addEventListener("click", function () {
-  deleteSearchBar();
+   document.getElementById("searchContainer").innerHTML = `
+   `;
   requestedYear = "All";
   filteredYears.length = 0;
   filteredYears = allYears.slice();
@@ -193,53 +191,41 @@ document.querySelector("#myRadio1").addEventListener("click", function () {
 
 //todo duplicate the array,  use first 12
 document.querySelector("#myRadio2").addEventListener("click", function () {
-  deleteSearchBar();
-  requestedYear = "Recent";
+    document.getElementById("searchContainer").innerHTML = `
+   `;
+    requestedYear = "Recent";
   filteredYears = allYears.slice();
   filteredYears.length = 12;
   produceFilteredCovers();
 });
 
 document.querySelector("#myRadio3").addEventListener("click", function () {
-  deleteSearchBar();
   assembleCurrentYear(2022);
 });
 
 document.querySelector("#myRadio4").addEventListener("click", function () {
-  deleteSearchBar();  
   assembleCurrentYear(2021);
 });
 
 document.querySelector("#myRadio5").addEventListener("click", function () {
-  deleteSearchBar();  
   assembleCurrentYear(2020);
 });
 
 document.querySelector("#myRadio6").addEventListener("click", function () {
-  deleteSearchBar();
   assembleCurrentYear(2019);
 });
-
 document.querySelector("#myRadio7").addEventListener("click", function () {
-  deleteSearchBar();
   assembleCurrentYear(2018);
 });
-
 document.querySelector("#myRadio8").addEventListener("click", function () {
-  deleteSearchBar();
   assembleCurrentYear(2017);
 });
-
 document.querySelector("#myRadio9").addEventListener("click", function () {
-  deleteSearchBar();
   assembleCurrentYear(2016);
 });
-
 document.querySelector("#myRadio10").addEventListener("click", function () {
-  deleteSearchBar();
   assembleCurrentYear(2015);
 });
-
 document.querySelector("#myRadio11").addEventListener("click", function () {
   createSearchBar();
   c("Index button pressed.")

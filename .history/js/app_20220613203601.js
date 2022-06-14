@@ -216,30 +216,20 @@ document.querySelector("#myRadio5").addEventListener("click", function () {
 });
 
 document.querySelector("#myRadio6").addEventListener("click", function () {
-  deleteSearchBar();
-  assembleCurrentYear(2019);
+  deleteSearchBar();assembleCurrentYear(2019);
 });
-
 document.querySelector("#myRadio7").addEventListener("click", function () {
-  deleteSearchBar();
-  assembleCurrentYear(2018);
+  deleteSearchBar();assembleCurrentYear(2018);
 });
-
 document.querySelector("#myRadio8").addEventListener("click", function () {
-  deleteSearchBar();
-  assembleCurrentYear(2017);
+  deleteSearchBar();assembleCurrentYear(2017);
 });
-
 document.querySelector("#myRadio9").addEventListener("click", function () {
-  deleteSearchBar();
-  assembleCurrentYear(2016);
+  deleteSearchBar();assembleCurrentYear(2016);
 });
-
 document.querySelector("#myRadio10").addEventListener("click", function () {
-  deleteSearchBar();
-  assembleCurrentYear(2015);
+  deleteSearchBar();assembleCurrentYear(2015);
 });
-
 document.querySelector("#myRadio11").addEventListener("click", function () {
   createSearchBar();
   c("Index button pressed.")
