@@ -145,7 +145,24 @@ const createSearchBar = function () {
   console.log("createSearchBar function");
 
     document.getElementById("gridContainer").innerHTML = `
-   `;
+    <div>
+  
+      ${filteredYears
+        .map(function (product) {
+          return `
+          <div class="box image">
+          <img class = "image__img" src ="./images/${product.downloadTitle}.png">
+     <div class="image__overlay">
+         <a href = "./images/${product.downloadTitle}.pdf"> <img class = "image__img" src ="./images/${product.downloadTitle}.pdf"></a>
+  
+     </div>
+          <h2>${product.issue}</h2>
+          </div>
+          </div>
+          `;
+        })
+        .join("")}
+      `;
 
   document.getElementById("searchContainer").innerHTML = `
   <div id = "searchWrapper">

@@ -144,18 +144,9 @@ const produceFilteredCovers = function () {
 const createSearchBar = function () {
   console.log("createSearchBar function");
 
-    document.getElementById("gridContainer").innerHTML = `
-   `;
-
   document.getElementById("searchContainer").innerHTML = `
   <div id = "searchWrapper">
-    <input
-        type = "text"
-        name = "searchBar"
-        id = "searchBar"
-        placeholder = "search for a character"
-    />
-        </div>
+  </div>
   `;
   
 };
