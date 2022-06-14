@@ -142,11 +142,8 @@ const produceFilteredCovers = function () {
 //!  61322.1714         QUOTE BASED FUNCTIONS BEGIN
 
 const createSearchBar = function () {
-  console.log("createSearchBar function");
-  document.getElementId("searchContainer").innerHTML = `
-  <div></div>
-  `;
-  
+  console.log("createSearchBar function");"
+  document.getElementId
 };
 
 const assembleSearchResults = function () {

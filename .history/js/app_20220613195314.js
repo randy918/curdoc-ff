@@ -141,14 +141,6 @@ const produceFilteredCovers = function () {
 
 //!  61322.1714         QUOTE BASED FUNCTIONS BEGIN
 
-const createSearchBar = function () {
-  console.log("createSearchBar function");
-  document.getElementId("searchContainer").innerHTML = `
-  <div></div>
-  `;
-  
-};
-
 const assembleSearchResults = function () {
 
     
@@ -157,7 +149,11 @@ const assembleSearchResults = function () {
 
 //!  51522.1100         SEARCHBAR FUNCTIONS
 
+const createSearchBar = function ()  {
 
+    console.log("createSearchBar function");
+
+}
 
 const assembleCurrentStories = function () {
 
@@ -212,7 +208,7 @@ document.querySelector("#myRadio10").addEventListener("click", function () {
   assembleCurrentYear(2015);
 });
 document.querySelector("#myRadio11").addEventListener("click", function () {
-  createSearchBar();
+  produceS("Index");
   c("Index button pressed.")
 });
 

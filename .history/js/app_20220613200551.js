@@ -136,17 +136,14 @@ const produceFilteredCovers = function () {
         })
         .join("")}
       `;
-  }
+  }$
 };
 
 //!  61322.1714         QUOTE BASED FUNCTIONS BEGIN
 
 const createSearchBar = function () {
   console.log("createSearchBar function");
-  document.getElementId("searchContainer").innerHTML = `
-  <div></div>
-  `;
-  
+  document.getElementId
 };
 
 const assembleSearchResults = function () {

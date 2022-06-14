@@ -144,9 +144,8 @@ const produceFilteredCovers = function () {
 const createSearchBar = function () {
   console.log("createSearchBar function");
   document.getElementId("searchContainer").innerHTML = `
-  <div></div>
   `;
-  
+  <div></div>
 };
 
 const assembleSearchResults = function () {
