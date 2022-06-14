@@ -181,7 +181,6 @@ document.querySelector("#myRadio2").addEventListener("click", function () {
 });
 
 document.querySelector("#myRadio3").addEventListener("click", function () {
-    location.href = "../index.html";
   assembleCurrentYear(2022);
 });
 
@@ -213,12 +212,13 @@ document.querySelector("#myRadio10").addEventListener("click", function () {
   assembleCurrentYear(2015);
 });
 
-document.getElementById("myRadio11").onclick = function () {
+document.getElementById("#myRadio11").onclick("click", function () {
   assembleSearchResults("Index");
   c("Index button pressed.");
-    location.href = "../search-index.html";
- 
-};
+  document.getElementById("myRadio11").onclick = function () {
+    location.href = "www.yoursite.com";
+  };
+});
 
 
 

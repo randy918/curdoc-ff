@@ -181,7 +181,6 @@ document.querySelector("#myRadio2").addEventListener("click", function () {
 });
 
 document.querySelector("#myRadio3").addEventListener("click", function () {
-    location.href = "../index.html";
   assembleCurrentYear(2022);
 });
 

@@ -181,7 +181,6 @@ document.querySelector("#myRadio2").addEventListener("click", function () {
 });
 
 document.querySelector("#myRadio3").addEventListener("click", function () {
-    location.href = "../index.html";
   assembleCurrentYear(2022);
 });
 
@@ -196,29 +195,25 @@ document.querySelector("#myRadio5").addEventListener("click", function () {
 document.querySelector("#myRadio6").addEventListener("click", function () {
   assembleCurrentYear(2019);
 });
-
 document.querySelector("#myRadio7").addEventListener("click", function () {
   assembleCurrentYear(2018);
 });
-
 document.querySelector("#myRadio8").addEventListener("click", function () {
   assembleCurrentYear(2017);
 });
-
 document.querySelector("#myRadio9").addEventListener("click", function () {
   assembleCurrentYear(2016);
 });
-
 document.querySelector("#myRadio10").addEventListener("click", function () {
   assembleCurrentYear(2015);
 });
-
-document.getElementById("myRadio11").onclick = function () {
+document.querySelector("#myRadio11").addEventListener("click", function () {
   assembleSearchResults("Index");
-  c("Index button pressed.");
-    location.href = "../search-index.html";
- 
-};
+  c("Index button pressed.")
+  document.getElementById("myRadio11").onclick = function () {var
+    
+}
+});
 
 
 
