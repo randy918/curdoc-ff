@@ -1,11 +1,6 @@
 const ff = [
-  { downloadTitle: "floral-finance-july-2022" },
-  { downloadTitle: "floral-finance-june-2022" },
-  { downloadTitle: "floral-finance-may-2022" },
-  { downloadTitle: "floral-finance-april-2022" },
-  { downloadTitle: "floral-finance-march-2022" },
-  { downloadTitle: "floral-finance-february-2022" },
-  { downloadTitle: "floral-finance-january-2022" },
+  
+  },
   { downloadTitle: "floral-finance-december-2021" },
   { downloadTitle: "floral-finance-november-2021" },
   { downloadTitle: "floral-finance-october-2021" },

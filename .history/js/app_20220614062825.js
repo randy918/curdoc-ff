@@ -2,7 +2,7 @@
 
 console.log("Report: " + ff.length + " records");// seems ace c5-14-22.1745 
 console.log("Self function test: " + r(8, 9));//my functions test
-console.log(ff[3], [0]);//my functions test
+console.log(ff[]);//my functions test
 
 
 //!  12-22-21.2222 -----------------VARIABLES
