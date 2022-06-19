@@ -47,10 +47,6 @@ let storyList = [];
 c({ff});
 
 
-//!  61922.1643         AX TEST CONST
-const request = new XMLHttpRequest();
-
-
 
 //!  21921.1621dddd----------------STORY COLLECTI
 
@@ -157,12 +153,12 @@ const produceFilteredCovers = function () {
 //!  61322.1714         SEARCH BASED FUNCTIONS BEGIN
 
 const createSearchBar = function () {
+
     console.log("createSearchBar function");
 
     deleteGridContainer();
 
-    document.getElementById("searchContainer").innerHTML =
-        `
+    document.getElementById("searchContainer").innerHTML = `
   <div id = "searchWrapper">
     <input
         type = "text"
@@ -172,37 +168,20 @@ const createSearchBar = function () {
     />
         </div>
   `;
-    //const charactersList = document.getElementById("charactersList");
+  //const charactersList = document.getElementById("charactersList");
 
-    const searchBar = document.getElementById("searchBar");
+  const searchBar = document.getElementById("searchBar");
 
-    searchBar.addEventListener("keyup", (e) => {
-            searchPhrase = (e.target.value);
-            // storyList = ff.filter(searchPhrase => searchPhrase.includes("from"));
-            c(searchPhrase);
-            c(articles.length);
-
-            storyList.filter( character => {
-chaacter
-            });
-           
+  searchBar.addEventListener("keyup", (e) => {
+    searchPhrase = (e.target.value);
+    // storyList = ff.filter(searchPhrase => searchPhrase.includes("from"));
+    c(searchPhrase);
+    hpCharacters = 
+  
 
 
-            const loadCharacters = async () => {
-                try {
-                    const res = await fetch(articles);
-                    storyList = await res.json();
-                    displayCharacters(storyList);
-                    c(storyList);
-                } catch (err) {
-                    console.error(err);
-                }
-            };
-        },
-    );
+  });
 };
-
-
 
 const assembleSearchResults = function () {
 
@@ -295,24 +274,6 @@ document.querySelector("#myRadio11").addEventListener("click", function () {
   c("Index button pressed.")
 });
 
-
-//!  61822.2254         AJAX
-
-c(1);
-c(2);
-
-request.open("GET", "https://jsonplaceholder.typicode.com/todos/");
-request
-
-setTimeout(() => {
-    c('callback function fired')
-}, 2000);
-
-
-c(3);
-c(4);
-
-//!  61922.1646         AJAX END
 
 
 

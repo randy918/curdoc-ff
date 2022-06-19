@@ -102,7 +102,6 @@ const articles = [
   ["0622.8", "inquiries & answers: paid holidays for employees"],
   ["0622.8", "inquiries & answers: teaching old dogs"],
   ["0622.8", "norms: sales from floral"], 
-  
   ["0522.2", "from the publishers: effective collections"],
   ["0522.2", "thinking on the margin: a lesson from hockey"],
   ["0522.4", "$776,487 in sales: $2,830 in profit"],
@@ -111,7 +110,6 @@ const articles = [
   ["0522.8", "inquiries & answers: low-cost mortgages"],
   ["0522.8", "inquiries & answers: liability protection"],
   ["0522.8", "norms: average discounts"], 
-
   ["0422.2", "from the publishers: collecting accounts"]  
   ["0422.2", "do retail florists make money?: a path to profits"],
   ["0422.4", "you & your corporation: how's the relationship going?"],
@@ -120,7 +118,7 @@ const articles = [
   ["0422.8", "inquiries & answers: order accuracy"],
   ["0422.8", "inquiries & answers: training new-hires"],
   ["0422.8", "norms: lost sales"], 
-
+  
   ["0322.2", "from the publishers: success"],
   ["0322.2", "house accounts: part 2: the mechanics matter"],
   ["0322.4", "evaluating advertising: making your investment pay"],
@@ -128,7 +126,6 @@ const articles = [
   ["0322.8", "inquiries & answers: shoplifting"],
   ["0322.8", "inquiries & answers: part-time space"],
   ["0322.8", "norms: advertising spend"], 
-
   ["0222.2", "from the publishers: inertia"],
   ["0222.2", "house accounts: part 1: when should you extend credit?"],
   ["0222.4", "shop profile: making money in february: one florist’s story"],

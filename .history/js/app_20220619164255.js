@@ -46,9 +46,7 @@ let storyList = [];
 
 c({ff});
 
-
-//!  61922.1643         AX TEST CONST
-const request = new XMLHttpRequest();
+con request = 
 
 
 
@@ -301,9 +299,6 @@ document.querySelector("#myRadio11").addEventListener("click", function () {
 c(1);
 c(2);
 
-request.open("GET", "https://jsonplaceholder.typicode.com/todos/");
-request
-
 setTimeout(() => {
     c('callback function fired')
 }, 2000);
@@ -312,7 +307,7 @@ setTimeout(() => {
 c(3);
 c(4);
 
-//!  61922.1646         AJAX END
+
 
 
 

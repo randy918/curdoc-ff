@@ -302,7 +302,7 @@ c(1);
 c(2);
 
 request.open("GET", "https://jsonplaceholder.typicode.com/todos/");
-request
+requ
 
 setTimeout(() => {
     c('callback function fired')
