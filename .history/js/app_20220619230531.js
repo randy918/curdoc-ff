@@ -225,7 +225,7 @@ c({filteredArticles});
    document.getElementById("gridContainer").innerHTML = `
     <div>
   
-      ${filteredArticles
+      ${filteredArtiles
         .map(function (product) {
           return `
           <div class="box image">

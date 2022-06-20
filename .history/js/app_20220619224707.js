@@ -203,47 +203,11 @@ const charactersList = document.getElementById("charactersList");
                for (var i = 0; i < articles.length; i++) {
                  c(articles[i].name);
 
-                 const result = articles[i].name.includes(searchPhrase);
-                 console.log(result); 
-                 
-                 if (result) {
+                 const result = articles[i].name.includes(searc);
+                 console.log(result); // t
+               }
 
-filteredArticles.push(articles[i]);
-                    
-                }
-                 // t
-               };
-c({filteredArticles});
-            };
-
-
-            //!  61922.2303         SHOW ARTICLES ON DISPLAY
-
- for (var i = 0; i < filteredArticles.length; i++) {
-   //downloadTitle = filteredYears[i].downloadTitle;
-
-   document.getElementById("gridContainer").innerHTML = `
-    <div>
-  
-      ${filteredArticles
-        .map(function (product) {
-          return `
-          <div class="box image">
-          <img class = "image__img" src ="./images/${product.downloadTitle}.png">
-     <div class="image__overlay">
-         <a href = "./images/${product.downloadTitle}.pdf"> <img class = "image__img" src ="./images/${product.downloadTitle}.pdf"></a>
-  
-     </div>
-          <h2>${product.issue}</h2>
-          </div>
-          </div>
-          `;
-        })
-        .join("")}
-      `;
- }
-
-
+            }
             // c(articles.name[4]);
 
             // c(articles.length);

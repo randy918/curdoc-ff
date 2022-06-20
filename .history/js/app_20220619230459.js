@@ -219,13 +219,13 @@ c({filteredArticles});
 
             //!  61922.2303         SHOW ARTICLES ON DISPLAY
 
- for (var i = 0; i < filteredArticles.length; i++) {
-   //downloadTitle = filteredYears[i].downloadTitle;
+ for (var i = 0; i < filteredArticl.length; i++) {
+   downloadTitle = filteredYears[i].downloadTitle;
 
    document.getElementById("gridContainer").innerHTML = `
     <div>
   
-      ${filteredArticles
+      ${filteredYears
         .map(function (product) {
           return `
           <div class="box image">
