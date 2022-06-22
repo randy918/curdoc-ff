@@ -213,15 +213,14 @@ body {
   align-items: start;
   justify-content: center;
 }
-
-// #gridContainer {
-//   display: grid;
-//   gap: 10px 40px;
-//   grid-template-columns: repeat(auto-fill, 180px);
-//   grid-auto-flow: row;
-//   align-items: start;
-//   justify-content: center;
-// }
+#gridContainer {
+  display: grid;
+  gap: 10px 40px;
+  grid-template-columns: repeat(auto-fill, 180px);
+  grid-auto-flow: row;
+  align-items: start;
+  justify-content: center;
+}
 
 
 //&  21121.1835     IS img necessary?

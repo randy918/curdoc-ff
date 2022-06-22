@@ -99,12 +99,11 @@ const createIssueProperties = function () {
   for (var i = 0; i < allYears.length; i++) {
     issue = articles[i].fileCore.substring(
       15,
-      articles[i].fileCore.length
+      arti[i].fileCore.length
     );
     issue = issue[0].toUpperCase() + issue.slice(1);
     issue = issue.replace("-", " ");
     allYears[i].issue = issue;
-    c(issue)
   }
 };
 

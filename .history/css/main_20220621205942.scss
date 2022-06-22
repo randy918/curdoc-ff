@@ -207,7 +207,7 @@ body {
 
 #gridContainer {
   display: grid;
-  gap: 10px 40px;
+  gap: 10px 0px;
   grid-template-columns: repeat(auto-fill, 180px);
   grid-auto-flow: row;
   align-items: start;

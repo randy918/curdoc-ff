@@ -208,8 +208,8 @@ body {
 #gridContainer {
   display: grid;
   gap: 10px 40px;
-  grid-template-columns: repeat(auto-fill, 180px);
-  grid-auto-flow: row;
+  grid-template-rows: repeat(auto-fill, 180px);
+  grid-auto-flow: c;
   align-items: start;
   justify-content: center;
 }

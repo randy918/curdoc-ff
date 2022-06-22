@@ -607,49 +607,49 @@ const articles = [
   },
 
   {
-    name: "August 2021", 
+    name: " 2021", 
     fileCore: "floral-finance-august-2021",
     page: 2,
     name: "From the Publishers: Relationships",
   },
   {
-    name: "August 2021", f
+    name: " 2021", f
     ileCore: "floral-finance-august-2021",
     page: 2,
     name: "Is Contract Labor a Good Idea? How Do I Know if It's Legal to Hire Contract Drivers?",
   },
   {
-    name: "August 2021", 
+    name: " 2021", 
     fileCore: "floral-finance-august-2021",
     page: 4,
     name: "Facing a Financial Crisis",
   },
   {
-    name: "August 2021", 
+    name: " 2021", 
     fileCore: "floral-finance-august-2021",
     page: 6,
     name: "Employee Discounts: A Low-Cost Benefit Your Employees Will Love",
   },
   {
-    name: "August 2021", 
+    name: " 2021", 
     fileCore: "floral-finance-august-2021",
     page: 7,
     name: "By the Books: The Numbers on Contract Labor",
   },
   {
-    name: "August 2021", 
+    name: " 2021", 
     fileCore: "floral-finance-august-2021",
     page: 8,
     name: "Inquiries & Answers: Too Much Rent",
   },
   {
-    name: "August 2021", 
+    name: " 2021", 
     fileCore: "floral-finance-august-2021",
     page: 8,
     name: "Inquiries & Answers: Ringing Up Incoming Wire Orders",
   },
   {
-    name: "August 2021", 
+    name: " 2021", 
     fileCore: "floral-finance-august-2021",
     page: 8,
     name: "Norms: Sales Increase",

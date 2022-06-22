@@ -104,7 +104,7 @@ const createIssueProperties = function () {
     issue = issue[0].toUpperCase() + issue.slice(1);
     issue = issue.replace("-", " ");
     allYears[i].issue = issue;
-    c(issue)
+    c()
   }
 };
 

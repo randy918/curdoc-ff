@@ -97,14 +97,13 @@ const duplicateJsonArray = function () {
 
 const createIssueProperties = function () {
   for (var i = 0; i < allYears.length; i++) {
-    issue = articles[i].fileCore.substring(
+    issue = allYears[i].downloadTitle.substring(
       15,
-      articles[i].fileCore.length
+      allYears[i].downloadTitle.length
     );
     issue = issue[0].toUpperCase() + issue.slice(1);
     issue = issue.replace("-", " ");
     allYears[i].issue = issue;
-    c(issue)
   }
 };
 
@@ -207,7 +206,8 @@ const createSearchBar = function () {
 
     deleteGridContainer();
 
-    document.getElementById("searchContainer").innerHTML = `
+    document.getElementById("searchContainer").innerHTML =
+        `
   <div id = "searchWrapper">
     <input
         type = "text"
@@ -216,7 +216,7 @@ const createSearchBar = function () {
         placeholder = "word or phrase"
     />
         </div>
-        <br>
+        
   `;
 const charactersList = document.getElementById("charactersList");
 
