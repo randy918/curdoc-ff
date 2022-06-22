@@ -260,9 +260,9 @@ c({filteredArticles});
         .map(function (product) {
           return `
           <div class="box image">
-          <img class = "image__img" src ="./images/${product.fileCore}.png">
+          <img class = "image__img" src ="./images/${product.file}.png">
      <div class="image__overlay">
-         <a href = "./images/${product.downloadTitle}.pdf"> <img class = "image__img" src ="./images/${product.fileCore}.pdf"></a>
+         <a href = "./images/${product.downloadTitle}.pdf"> <img class = "image__img" src ="./images/${product.downloadTitle}.pdf"></a>
   
      </div>
           <h2>${product.issue}</h2>
