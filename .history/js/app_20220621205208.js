@@ -262,7 +262,7 @@ c({filteredArticles});
           <div class="box image">
           <img class = "image__img" src ="./images/${product.fileCore}.png">
      <div class="image__overlay">
-         <a href = "./images/${product.fileCore}.pdf"> <img class = "image__img" src ="./images/${product.fileCore}.pdf"></a>
+         <a href = "./images/${product.downloadTitle}.pdf"> <img class = "image__img" src ="./images/${product.fileC}.pdf"></a>
   
      </div>
           <h2>${product.issue}</h2>
