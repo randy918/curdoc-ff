@@ -267,8 +267,8 @@ c({filteredArticles});
   
      </div>
           <h2>${product.date + ", p" + product.page}</h2>
-          <h1>${product.name}</h1>
-
+          <h2>${product.date + ", p" + product.page}</h2>
+          
           
           
           </div>

@@ -262,15 +262,14 @@ c({filteredArticles});
           return `
           <div class="box image">
           <img class = "image__img" src ="./images/${product.fileCore}.png">
-     <div class="image__overlay">nn
+     <div class="image__overlay">
          <a href = "./images/${product.fileCore}.pdf"> <img class = "image__img" src ="./images/${product.fileCore}.pdf"></a>
   
      </div>
-          <h2>${product.date + ", p" + product.page}</h2>
-          <h1>${product.name}</h1>
+          <h2>${product.date + ", page " + product.page}</h2>
+          <h2>${product.date + ", page " + product.page}</h2>
 
-          
-          
+
           </div>
           </div>
           `;
