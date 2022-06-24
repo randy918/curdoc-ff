@@ -97,10 +97,9 @@ const duplicateJsonArray = function () {
 
 const createIssueProperties = function () {
   for (var i = 0; i < allYears.length; i++) {
-    console.log();
-    issue = ff[i].downloadTitle.substring(
+    issue = articles[i].fileCore.substring(
       15,
-      ff[i].downloadTitle.length
+      articles[i].fileCore.length
     );
   
     issue = issue[0].toUpperCase() + issue.slice(1);

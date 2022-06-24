@@ -100,7 +100,7 @@ const createIssueProperties = function () {
     console.log();
     issue = ff[i].downloadTitle.substring(
       15,
-      ff[i].downloadTitle.length
+      f[i].downloadTitle.length
     );
   
     issue = issue[0].toUpperCase() + issue.slice(1);

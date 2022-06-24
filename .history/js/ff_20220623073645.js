@@ -693,7 +693,7 @@ const articles = [
     name: "Cut Your Payroll: Key to Seasoned Success",
   },
   {
-    date: "July 2021",
+    date: "2021",
     fileCore: "floral-finance-july-2021",
     page: 7,
     name: "By the Books: Non-Holiday Staffing Analysis—Know What You Can Afford",
