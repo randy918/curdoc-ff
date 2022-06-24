@@ -188,7 +188,7 @@ const createSearchBar = function () {
         type = "text"
         name = "searchBar"
         id = "searchBar"
-        placeholder = "enter at least a 3-letter word or phrase,  i.e. cash,  flowers"
+        placeholder = "enter word or phrase,  i.e. cash,  flowers"
     />
         </div>
         <br>
@@ -200,20 +200,9 @@ const charactersList = document.getElementById("charactersList");
     searchBar.addEventListener(
         "keyup",
         (e) => {
-        
-        
-        
             filteredArticles.length = 0;
             searchPhrase = e.target.value.toLowerCase();
             c(searchPhrase);
-
-if (searchPhrase.length < 3) {
-console.log("🚀 ~ file: app.js ~ line 211 ~ createSearchBar ~ searchPhrase.length", searchPhrase.length);
-
-    emptySearchMessage();
-
-}
-
 
                for (var i = 0; i < articles.length; i++) {
                  c(articles[i].name);
@@ -224,8 +213,11 @@ console.log("🚀 ~ file: app.js ~ line 211 ~ createSearchBar ~ searchPhrase.len
                  if (result) {
 
 filteredArticles.push(articles[i]);
+                    
                 } else  {
-                   deleteGridContainer(); 
+
+                   deleteGridContainer; 
+
                 }
                  // t
                };

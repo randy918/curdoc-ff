@@ -208,9 +208,8 @@ const charactersList = document.getElementById("charactersList");
             c(searchPhrase);
 
 if (searchPhrase.length < 3) {
-console.log("🚀 ~ file: app.js ~ line 211 ~ createSearchBar ~ searchPhrase.length", searchPhrase.length);
 
-    emptySearchMessage();
+    <h1>No </h1></h1>
 
 }
 

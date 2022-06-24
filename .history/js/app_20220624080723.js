@@ -177,18 +177,33 @@ const produceFilteredCovers = function () {
 
 //!  61322.1714         SEARCH BASED FUNCTIONS BEGIN
 
+const searchMonth = function () {
+
+
+
+};
+const searchYear = function () {
+
+
+
+};
+
+
+
+
 const createSearchBar = function () {
+    console.log("createSearchBar function");
     
+    $("body").css("background-image", "url(../images/shutterstock_1687574617-dark.png)"); 
     deleteGridContainer();
 
     document.getElementById("searchContainer").innerHTML = `
   <div id = "searchWrapper">
-  <h1><br></h1>
     <input
         type = "text"
         name = "searchBar"
         id = "searchBar"
-        placeholder = "enter at least a 3-letter word or phrase,  i.e. cash,  flowers"
+        placeholder = "word or phrase"
     />
         </div>
         <br>
@@ -200,21 +215,13 @@ const charactersList = document.getElementById("charactersList");
     searchBar.addEventListener(
         "keyup",
         (e) => {
-        
-        
-        
             filteredArticles.length = 0;
             searchPhrase = e.target.value.toLowerCase();
             c(searchPhrase);
 
-if (searchPhrase.length < 3) {
-console.log("🚀 ~ file: app.js ~ line 211 ~ createSearchBar ~ searchPhrase.length", searchPhrase.length);
+      
 
-    emptySearchMessage();
-
-}
-
-
+                
                for (var i = 0; i < articles.length; i++) {
                  c(articles[i].name);
 
@@ -224,8 +231,7 @@ console.log("🚀 ~ file: app.js ~ line 211 ~ createSearchBar ~ searchPhrase.len
                  if (result) {
 
 filteredArticles.push(articles[i]);
-                } else  {
-                   deleteGridContainer(); 
+                    
                 }
                  // t
                };
@@ -271,15 +277,15 @@ c(filteredArticles.length);
     
 };
 
-const darkenBackground = function () {
+con
 
-  $("body").css(
-    "background-image",
-    "url(../images/shutterstock_1687574617-dark.png)"
-  ); 
+
+
+const assembleSearchResults = function () {
+
+    console.log("assembleSearchResults function");
 
 }
-
 
 //!  51522.1100         SEARCHBAR FUNCTIONS
 
@@ -372,7 +378,6 @@ document.querySelector("#myRadio10").addEventListener("click", function () {
 
 document.querySelector("#myRadio11").addEventListener("click", function () {
   createSearchBar();
-  darkenBackground();
   c("Index button pressed.")
 });
 

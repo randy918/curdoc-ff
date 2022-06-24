@@ -207,14 +207,9 @@ const charactersList = document.getElementById("charactersList");
             searchPhrase = e.target.value.toLowerCase();
             c(searchPhrase);
 
-if (searchPhrase.length < 3) {
-console.log("🚀 ~ file: app.js ~ line 211 ~ createSearchBar ~ searchPhrase.length", searchPhrase.length);
-
-    emptySearchMessage();
-
-}
 
 
+            
                for (var i = 0; i < articles.length; i++) {
                  c(articles[i].name);
 
