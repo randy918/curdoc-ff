@@ -111,6 +111,21 @@ body {
   height: 100%;
 }
 
+.image__overlay--articles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 230px;
+  background: rgba(255, 255, 255, 0.5);
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.image__overlay--articles:hover {
+  opacity: 1;
+}
+
 .image__overlay {
   position: absolute;
   top: 0;
@@ -124,6 +139,21 @@ body {
 
 .image__overlay:hover {
   opacity: 1;
+}
+
+.announce {
+  position: absolute;
+  top: 6vw;
+  right: 4vw;
+  text-align: center;
+}
+
+.announce h1 {
+  font-size: clamp(1rem, 1.51vw, 1.25rem);
+}
+
+.announce h3 {
+  font-size: clamp(0.66rem, 0.7vw, 0.75rem);
 }
 
 .lightbox {
