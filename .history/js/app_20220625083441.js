@@ -3,6 +3,47 @@
 console.log("Report: " + ff.length + " issues");// seems ace c5-14-22.1745 
 console.log("Report: " + articles.length + " articles");// seems ace c5-14-22.1745 
 
+//!  12-22-21.2222 -----------------GLOBAL VARIABLES
+
+let issue;
+let downloadTitle;
+let num;
+let allYears = [];
+let filteredYears = [];
+let reverseFilteredYears = [];
+const years = [];
+
+//!  12-22-21.2222  ----------------DEFAULT VARIABLES
+
+let year = 0;
+let oldYear = 0;
+let newYear = 0;
+let requestedYear = 0;
+
+let button2015 = 2015;
+let button2016 = 2016;
+let button2017 = 2017;
+let button2018 = 2018;
+let button2019 = 2019;
+let button2020 = 2020;
+let button2021 = 2021;
+let button2022 = 2022;
+let radioButtons = { All: false, Recent: false, 2022: false, 2021: true };
+let currentButton = "Recent";
+let initFlag = false;
+let searchPhrase = "";
+let downloadName = "";
+
+const digitsInYear = 4;
+let storyList = [];
+const filteredArticles = [];
+let myArray = [];
+let nameArray = [];
+let dateArray = [];
+const monthNames = [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ];
+let dateMonth = "";
+let dateYear = "";
+let dateArticle = "";
 
 //!  21921.1621dddd----------------FUNCTIONS
 
@@ -292,6 +333,29 @@ document.querySelector("#myRadio11").addEventListener("click", function () {
   darkenBackground();
   c("Index button pressed.")
 });
+
+
+//!  61822.2254         AJAX
+
+c(1);
+c(2);
+
+// request.open("GET", "https://jsonplaceholder.typicode.com/todos/");
+// request.send();
+
+setTimeout(() => {
+    c('callback function fired')
+}, 2000);
+
+// commttt
+c(3);
+c(4);
+
+//!  61922.1646         AJAX END
+
+
+
+//!  122221.2014    MAIN SEQUENCE
 
 function main() {
   init();

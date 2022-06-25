@@ -1,12 +1,30 @@
+console.log("Report: " + ff.length + " issues"); // seems ace c5-14-22.1745
+console.log("Report: " + articles.length + " articles"); // seems ace c5-14-22.1745
 
-
-console.log("Report: " + ff.length + " issues");// seems ace c5-14-22.1745 
-console.log("Report: " + articles.length + " articles");// seems ace c5-14-22.1745 
 
 
 //!  21921.1621dddd----------------FUNCTIONS
 
+const globalVariables = function () {
+  //!  12-22-21.2222 -----------------GLOBAL VARIABLES
+
+  let issue;
+  let downloadTitle;
+  let num;
+  let allYears = [];
+  let filteredYears = [];
+  let reverseFilteredYears = [];
+  const years = [];
+};
+
+const defaultVariables = function () {
+
+
+
+}
 const init = function () {
+  globalVariables();
+  defaultVariables();
   initFlag = true;
   duplicateJsonArray();
 
@@ -18,7 +36,6 @@ const init = function () {
   filteredYears = allYears.slice();
   filteredYears.length = 12;
   produceFilteredCovers();
-
 };
 
 const duplicateJsonArray = function () {
@@ -28,15 +45,12 @@ const duplicateJsonArray = function () {
 const createIssueProperties = function () {
   for (var i = 0; i < allYears.length; i++) {
     console.log();
-    issue = ff[i].downloadTitle.substring(
-      15,
-      ff[i].downloadTitle.length
-    );
-  
+    issue = ff[i].downloadTitle.substring(15, ff[i].downloadTitle.length);
+
     issue = issue[0].toUpperCase() + issue.slice(1);
     issue = issue.replace("-", " ");
     allYears[i].issue = issue;
-    c(issue)
+    c(issue);
   }
 };
 
@@ -106,8 +120,7 @@ const produceFilteredCovers = function () {
 };
 
 const physicalSearchBar = function () {
-    document.getElementById("searchContainer").innerHTML =
-        `
+  document.getElementById("searchContainer").innerHTML = `
   <div id = "searchWrapper">
   <h1><br></h1>
     <input
@@ -119,7 +132,7 @@ const physicalSearchBar = function () {
         </div>
         <br>
   `;
-}
+};
 
 const showArticles = function () {
   for (var i = 0; i < filteredArticles.length; i++) {
@@ -157,75 +170,65 @@ const darkenBackground = function () {
   );
 };
 
-const getSearchInput = function ()  {
+const getSearchInput = function () {
+  const searchBar = document.getElementById("searchBar");
 
-    const searchBar = document.getElementById("searchBar");
+  searchBar.addEventListener("keyup", (e) => {
+    filteredArticles.length = 0;
+    searchPhrase = e.target.value.toLowerCase();
+    c(searchPhrase);
 
-    searchBar.addEventListener("keyup", (e) => {
-      filteredArticles.length = 0;
-      searchPhrase = e.target.value.toLowerCase();
-      c(searchPhrase);
+    for (var i = 0; i < articles.length; i++) {
+      const result = articles[i].name.toLowerCase().includes(searchPhrase);
 
-      for (var i = 0; i < articles.length; i++) {
-        const result = articles[i].name.toLowerCase().includes(searchPhrase);
-
-        if (result) {
-          filteredArticles.push(articles[i]);
-        } else {
-          deleteGridContainer();
-        }
-        // t
+      if (result) {
+        filteredArticles.push(articles[i]);
+      } else {
+        deleteGridContainer();
       }
-      c(filteredArticles.length);
+      // t
+    }
+    c(filteredArticles.length);
 
-      showArticles();
+    showArticles();
 
-      //!  61922.2303         SHOW ARTICLES ON DISPLAY
-    });
-
-}
+    //!  61922.2303         SHOW ARTICLES ON DISPLAY
+  });
+};
 
 //!  61322.1714         SEARCH BASED FUNCTIONS BEGIN
 
 const createSearchBar = function () {
-    
-    deleteGridContainer();
-    physicalSearchBar();
-    getSearchInput();
+  deleteGridContainer();
+  physicalSearchBar();
+  getSearchInput();
 
-
-// const charactersList = document.getElementById("charactersList");
-
-    
-    
+  // const charactersList = document.getElementById("charactersList");
 };
 
-const emptySearchMessage = function () {
+//!  51522.1100         SEARCHBAR FUNCTIONS
 
-      document.getElementById("searchMessageContainer").innerHTML = `
+const emptySearchMessage = function () {
+  document.getElementById("searchMessageContainer").innerHTML = `
       <h1>No articles match your search.</h1>
    `;
+};
 
-}
-
-const deleteSearchBar = function()
- { 
+const deleteSearchBar = function () {
   document.getElementById("searchContainer").innerHTML = `
    `;
-     $("body").css("background-image", "url(../images/shutterstock_1687574617.jpg)");
-}
-
-const deleteGridContainer = function()
- { 
+  $("body").css(
+    "background-image",
+    "url(../images/shutterstock_1687574617.jpg)"
+  );
+};
+const deleteGridContainer = function () {
   document.getElementById("gridContainer").innerHTML = `
    `;
-}
+};
 
 const assembleCurrentStories = function () {
-
-    console.log("assembleCurrentStories function");
-
-
+  console.log("assembleCurrentStories function");
 };
 
 //! . 122221.2013     EVENT LISTENERS
@@ -248,17 +251,17 @@ document.querySelector("#myRadio2").addEventListener("click", function () {
 });
 
 document.querySelector("#myRadio3").addEventListener("click", function () {
- deleteSearchBar();
+  deleteSearchBar();
   assembleCurrentYear(2022);
 });
 
 document.querySelector("#myRadio4").addEventListener("click", function () {
-  deleteSearchBar();  
+  deleteSearchBar();
   assembleCurrentYear(2021);
 });
 
 document.querySelector("#myRadio5").addEventListener("click", function () {
-  deleteSearchBar();  
+  deleteSearchBar();
   assembleCurrentYear(2020);
 });
 
@@ -290,8 +293,28 @@ document.querySelector("#myRadio10").addEventListener("click", function () {
 document.querySelector("#myRadio11").addEventListener("click", function () {
   createSearchBar();
   darkenBackground();
-  c("Index button pressed.")
+  c("Index button pressed.");
 });
+
+//!  61822.2254         AJAX
+
+c(1);
+c(2);
+
+// request.open("GET", "https://jsonplaceholder.typicode.com/todos/");
+// request.send();
+
+setTimeout(() => {
+  c("callback function fired");
+}, 2000);
+
+// commttt
+c(3);
+c(4);
+
+//!  61922.1646         AJAX END
+
+//!  122221.2014    MAIN SEQUENCE
 
 function main() {
   init();
