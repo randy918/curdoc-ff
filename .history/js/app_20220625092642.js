@@ -175,12 +175,12 @@ const getSearchInput = function ()  {
       }
       c(filteredArticles.length);
 
-      if (searchPhrase.length > 2) {
+      if (searchPhrase.length < 3) {
 
-         showArticles();
+        
 
       }
-     
+      showArticles();
 
       //!  61922.2303         SHOW ARTICLES ON DISPLAY
     });

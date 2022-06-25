@@ -27,13 +27,16 @@ const duplicateJsonArray = function () {
 
 const createIssueProperties = function () {
   for (var i = 0; i < allYears.length; i++) {
+    console.log();
     issue = ff[i].downloadTitle.substring(
       15,
       ff[i].downloadTitle.length
     );
+  
     issue = issue[0].toUpperCase() + issue.slice(1);
     issue = issue.replace("-", " ");
     allYears[i].issue = issue;
+    c(issue)
   }
 };
 
@@ -175,12 +178,7 @@ const getSearchInput = function ()  {
       }
       c(filteredArticles.length);
 
-      if (searchPhrase.length > 2) {
-
-         showArticles();
-
-      }
-     
+      showArticles();
 
       //!  61922.2303         SHOW ARTICLES ON DISPLAY
     });
