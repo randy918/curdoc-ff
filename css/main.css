@@ -148,6 +148,15 @@ body {
   text-align: center;
 }
 
+.gotoSearch {
+  transition: 0.2s;
+}
+.gotoSearch:hover {
+  color: white;
+  transform: scale(1.15);
+  cursor: pointer;
+}
+
 .announce h1 {
   font-size: clamp(1rem, 1.51vw, 1.25rem);
 }
