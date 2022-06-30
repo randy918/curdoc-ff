@@ -1,14 +1,40 @@
+//todo  positioning
+//todo  display
+//todo  box-model
+//todo  typography
+//todo  manipulation
+//todo  misc
+
+//!  Sass Default Variables PERMANENT
+$colors: (
+  bg: rgba(55, 66, 76, 1),
+  theBlue: rgba(26, 161, 217, 1),
+  theDarkGray: rgba(43, 50, 56, 1),
+  theGray: rgb(78, 92, 107),
+  theGreen: rgba(0, 173, 43, 1),
+  theRed: rgba(194, 47, 51, 1),
+  theYellow: rgb(253, 247, 159),
+);
+
+//!  Sass Default Functions PERMANENT
+@function getColor($color-name) {
+  @return map-get($colors, $color-name);
+}
+
+//!  Tabletop Google Sheets integration
+//!  Default font/etc body setup PERMANENT
+//!  Actual CSS  starts here
+
 * {
   box-sizing: border-box;
 }
-
 html {
   font-size: 16px;
 }
 
 h1 {
   color: white;
-  margin-top: -16px;
+margin-top: -16px;
   font-size: 20px;
   font-weight: 900;
   line-height: 1;
@@ -42,22 +68,24 @@ h4 {
 }
 
 .green {
-  color: rgb(0, 173, 43);
+  color: rgba(0, 173, 43, 1);
 }
 
 .blue {
-  color: rgb(26, 161, 217);
+  color: getColor(theBlue);
+
   font-weight: 900;
 }
 
 .yellow {
-  color: rgb(253, 247, 159);
+  color: getColor(theYellow);
+
   margin-bottom: 0;
   padding-bottom: 0;
 }
 
 .bgyellow {
-  background-color: rgb(253, 247, 159);
+  background-color: getColor(theYellow);
 }
 
 #tvcHeader {
@@ -87,6 +115,8 @@ body {
   font-size: 30px;
   margin: 0;
   padding: 3vh 3vw 3vh 3vw;
+
+  // background-color: floralwhite;
 }
 
 .main-logo {
@@ -97,7 +127,6 @@ body {
   width: 180px;
   height: auto;
 }
-
 .image {
   position: relative;
   width: 180px;
@@ -125,7 +154,6 @@ body {
 .image__overlay--articles:hover {
   opacity: 1;
 }
-
 .image__overlay {
   position: absolute;
   top: 0;
@@ -142,29 +170,38 @@ body {
 }
 
 .announce {
-  position: absolute;
-  top: 6vw;
-  right: 4vw;
-  text-align: center;
-  caret-color: rgba(0, 0, 0, 0);
+
+    position: absolute;
+    top: 6vw;
+    right: 4vw;
+    text-align: center;
+    // caret-color: rgba(0,0,0,0);
+
 }
 
 .gotoSearch {
-  transition: 0.2s;
-}
-.gotoSearch:hover {
-  color: white;
-  transform: scale(1.15);
-  cursor: pointer;
+
+transition: .2s;
+
+   &:hover  {
+color: white;
+transform: scale(1.15);
+cursor: pointer;
+   }
+
 }
 
 .announce h1 {
-  font-size: clamp(1rem, 1.51vw, 1.25rem);
+
+    font-size: clamp(1rem, 1.51vw, 1.25rem);
+
+}
+.announce h3 {
+
+    font-size: clamp(0.66rem, .70vw, .75rem);
+
 }
 
-.announce h3 {
-  font-size: clamp(0.66rem, 0.7vw, 0.75rem);
-}
 
 .lightbox {
   position: fixed;
@@ -185,34 +222,44 @@ body {
 
 .radio {
   overflow: hidden;
+
   color: #ffffff;
+  //  padding: 1em;
   text-decoration: none;
   text-align: center;
   display: hidden;
+
   margin: 1rem;
-}
-.radio__input {
-  display: none;
-}
-.radio__input:hover + .radio__label {
-  background-image: linear-gradient(to bottom, #73e67a, #61cc4b);
-  color: black;
-  transition: 0.3s;
-}
-.radio__input:checked + .radio__label {
-  background: white;
-  color: black;
-}
-.radio__label {
-  background-image: linear-gradient(to bottom, #068639, #046d79);
-  border-radius: 2rem;
-  cursor: pointer;
-  margin: 0 0.3rem;
-  padding: 0.25em 1.02em;
-  font-family: Arial;
-  font-size: clamp(0.75rem, 1.51vw, 1.25rem);
-  font-weight: 200;
-  letter-spacing: 0.05rem;
+
+  &__input {
+    display: none;
+  }
+  &__input:hover + &__label {
+    background-image: linear-gradient(to bottom, #73e67a, #61cc4b);
+    color: black;
+    transition: 0.3s;
+  }
+
+  &__input:checked + &__label {
+    background: white;
+    color: black;
+  }
+
+  &__label {
+    background-image: linear-gradient(to bottom, #068639, #046d79);
+    border-radius: 2rem;
+    cursor: pointer;
+    margin: 0 0.3rem;
+    padding: 0.25em 1.02em;
+
+    font-family: Arial;
+    //  font-size: 1.2rem;
+    //  font-size: 1.51vw;
+    font-size: clamp(0.75rem, 1.51vw, 1.25rem);
+
+    font-weight: 200;
+    letter-spacing: 0.05rem;
+  }
 }
 
 #gridContainer {
@@ -224,66 +271,88 @@ body {
   justify-content: center;
 }
 
+// #gridContainer {
+//   display: grid;
+//   gap: 10px 40px;
+//   grid-template-columns: repeat(auto-fill, 180px);
+//   grid-auto-flow: row;
+//   align-items: start;
+//   justify-content: center;
+// }
+
+
+//&  21121.1835     IS img necessary?
+// img {
+//   width: 180px;
+//   // height: 370px;
+//   margin-top: 10px;
+//   margin-bottom: 5px;
+// }
+
 /* Opacity #2 */
 .hover12 figure {
   background: #1abc9c;
 }
-
 .hover12 figure img {
   opacity: 1;
+  -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
 }
-
 .hover12 figure:hover img {
   opacity: 0.5;
 }
 
 .btn {
   display: inline-block;
-  background-color: rgb(26, 161, 217);
+  background-color: getColor(theBlue);
   border: none;
   width: 85px;
+  color: getColor(black);
   text-align: center;
   font-size: 16px;
+  // margin-top: 15px;
   padding: 0px 0px;
   transition: 0.3s;
 }
 
 .btn:hover {
-  background-color: rgb(43, 50, 56);
-  color: rgb(253, 247, 159);
+  background-color: getColor(theDarkGray);
+  color: getColor(theYellow);
 }
 
 .btn2 {
-  background-color: rgb(194, 47, 51);
+  background-color: getColor(theRed);
   border: none;
   width: 85px;
-  color: rgb(253, 247, 159);
+  color: getColor(theYellow);
   text-align: center;
   font-size: 16px;
+  // margin-top: 15px;
+  // padding: 10px 10px;
   transition: 0.3s;
 }
 
 .btn2:hover {
-  background-color: rgb(43, 50, 56);
-  color: rgb(253, 247, 159);
+  background-color: getColor(theDarkGray);
+  color: getColor(theYellow);
 }
 
 #searchBar {
-  display: block;
-  border-radius: 2rem;
-  border: 1px solid #eaeaea;
-  cursor: pointer;
-  font-family: Arial;
-  font-size: clamp(0.75rem, 1.51vw, 1.25rem);
-  font-weight: 200;
-  height: 32px;
-  padding: 0.25em 1.02em;
-  margin-right: 12vw;
-  margin-left: 12vw;
-  width: 70vw;
+display: block;
+    border-radius: 2rem;
+    border: 1px solid #eaeaea;
+    cursor: pointer;
+    font-family: Arial;
+    font-size: clamp(0.75rem, 1.51vw, 1.25rem);
+    font-weight: 200;
+    height: 32px;
+    padding: 0.25em 1.02em;
+     margin-right: 12vw;
+    margin-left: 12vw;
+    width:70vw;
+
 }
 
 #searchWrapper {
-  position: relative;
-}/*# sourceMappingURL=main.css.map */
+    position: relative;
+}

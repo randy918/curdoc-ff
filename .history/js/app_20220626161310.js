@@ -103,7 +103,7 @@ const physicalSearchBar = function () {
         type = "text"
         name = "searchBar"
         id = "searchBar"
-        placeholder = "enter at least a 3-letter word or phrase, i.e. atm, cash"
+        placeholder = "enter at least a 3-letter word or phrase, i.e. at, cash"
     />
         </div>
         <br>

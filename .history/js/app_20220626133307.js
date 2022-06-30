@@ -103,7 +103,7 @@ const physicalSearchBar = function () {
         type = "text"
         name = "searchBar"
         id = "searchBar"
-        placeholder = "enter at least a 3-letter word or phrase, i.e. atm, cash"
+        placeholder = "enter at least a 3-letter word or phrase, i.e. cash, flowers"
     />
         </div>
         <br>
@@ -274,7 +274,7 @@ document.querySelector("#myRadio11").addEventListener("click", function () {
 document.querySelector("#toSearch").addEventListener("click", function () {
   createSearchBar();
   darkenBackground();
-  document.getElementById("myRadio11").checked = true;
+  docu
   c("Index button pressed.");
 });
 
