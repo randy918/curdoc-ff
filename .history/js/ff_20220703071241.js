@@ -132,7 +132,7 @@ const articles = [
     date: "August 2022",
     fileCore: "floral-finance-august-2022",
     page: 8,
-    name: "Norms: Non-Floral Sales",
+    name: "Norms: Shrink",
   },
   {
     date: "July 2022",

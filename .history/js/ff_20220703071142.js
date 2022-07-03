@@ -120,19 +120,19 @@ const articles = [
     date: "August 2022",
     fileCore: "floral-finance-august-2022",
     page: 8,
-    name: "Inquiries & Answers: Entertaining Children",
+    name: "Inquiries & Answers: Non-Floral Sales—The Numbers",
   },
   {
     date: "August 2022",
     fileCore: "floral-finance-august-2022",
     page: 8,
-    name: "Inquiries & Answers: How to Pay 'No Rent'",
+    name: "Inquiries & Answers: August Cash",
   },
   {
     date: "August 2022",
     fileCore: "floral-finance-august-2022",
     page: 8,
-    name: "Norms: Non-Floral Sales",
+    name: "Norms: Shrink",
   },
   {
     date: "July 2022",

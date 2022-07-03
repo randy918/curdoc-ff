@@ -87,54 +87,6 @@ const ff = [
 
 const articles = [
   {
-    date: "August 2022",
-    fileCore: "floral-finance-august-2022",
-    page: 2,
-    name: "From the Publishers: Telephone Tag",
-  },
-  {
-    date: "August 2022",
-    fileCore: "floral-finance-august-2022",
-    page: 2,
-    name: "Hiring Good People: No Greater Responsibility",
-  },
-  {
-    date: "August 2022",
-    fileCore: "floral-finance-august-2022",
-    page: 4,
-    name: "Shop Profile: Florists Can Make Money",
-  },
-  {
-    date: "August 2022",
-    fileCore: "floral-finance-august-2022",
-    page: 6,
-    name: "Non-Floral Sales: What's the Potential?",
-  },
-  {
-    date: "August 2022",
-    fileCore: "floral-finance-august-2022",
-    page: 7,
-    name: "By the Books: Non-Floral Sales—The Numbers",
-  },
-  {
-    date: "August 2022",
-    fileCore: "floral-finance-august-2022",
-    page: 8,
-    name: "Inquiries & Answers: Entertaining Children",
-  },
-  {
-    date: "August 2022",
-    fileCore: "floral-finance-august-2022",
-    page: 8,
-    name: "Inquiries & Answers: How to Pay 'No Rent'",
-  },
-  {
-    date: "August 2022",
-    fileCore: "floral-finance-august-2022",
-    page: 8,
-    name: "Norms: Non-Floral Sales",
-  },
-  {
     date: "July 2022",
     fileCore: "floral-finance-july-2022",
     page: 2,

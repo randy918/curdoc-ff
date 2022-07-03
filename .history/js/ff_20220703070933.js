@@ -108,13 +108,13 @@ const articles = [
     date: "August 2022",
     fileCore: "floral-finance-august-2022",
     page: 6,
-    name: "Non-Floral Sales: What's the Potential?",
+    name: "Non-Floral Sales: What’s the Potential?",
   },
   {
     date: "August 2022",
     fileCore: "floral-finance-august-2022",
     page: 7,
-    name: "By the Books: Non-Floral Sales—The Numbers",
+    name: "By the Books: Non-Holiday Staffing Analysis—Know What You Can Afford",
   },
   {
     date: "August 2022",
@@ -126,13 +126,13 @@ const articles = [
     date: "August 2022",
     fileCore: "floral-finance-august-2022",
     page: 8,
-    name: "Inquiries & Answers: How to Pay 'No Rent'",
+    name: "Inquiries & Answers: August Cash",
   },
   {
     date: "August 2022",
     fileCore: "floral-finance-august-2022",
     page: 8,
-    name: "Norms: Non-Floral Sales",
+    name: "Norms: Shrink",
   },
   {
     date: "July 2022",

@@ -126,13 +126,13 @@ const articles = [
     date: "August 2022",
     fileCore: "floral-finance-august-2022",
     page: 8,
-    name: "Inquiries & Answers: How to Pay 'No Rent'",
+    name: "Inquiries & Answers: How to Pay ‘No Rent'",
   },
   {
     date: "August 2022",
     fileCore: "floral-finance-august-2022",
     page: 8,
-    name: "Norms: Non-Floral Sales",
+    name: "Norms: Shrink",
   },
   {
     date: "July 2022",
