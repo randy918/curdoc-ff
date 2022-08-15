@@ -126,13 +126,13 @@ const articles = [
     date: "September 2022",
     fileCore: "floral-finance-august-2022",
     page: 8,
-    name: "Inquiries & Answers: It's a Crime",
+    name: "Inquiries & Answers: It'",
   },
   {
     date: "September 2022",
     fileCore: "floral-finance-august-2022",
     page: 8,
-    name: "Norms: Older Workers",
+    name: "Norms: Non-Floral Sales",
   },
   {
     date: "August 2022",
