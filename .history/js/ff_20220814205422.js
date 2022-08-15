@@ -1,5 +1,4 @@
 const ff = [
-  { downloadTitle: "floral-finance-september-2022" },
   { downloadTitle: "floral-finance-august-2022" },
   { downloadTitle: "floral-finance-july-2022" },
   { downloadTitle: "floral-finance-june-2022" },
