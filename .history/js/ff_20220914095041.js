@@ -89,54 +89,6 @@ const ff = [
 
 const articles = [
   {
-    date: "October 2022",
-    fileCore: "floral-finance-october-2022",
-    page: 2,
-    name: "From the Publishers: Raise Your Prices",
-  },
-  {
-    date: "October 2022",
-    fileCore: "floral-finance-october-2022",
-    page: 2,
-    name: "Your Pricing Formula: It's Your Call",
-  },
-  {
-    date: "October 2022",
-    fileCore: "floral-finance-october-2022",
-    page: 4,
-    name: "Firing an Enployee: Imagine This",
-  },
-  {
-    date: "October 2022",
-    fileCore: "floral-finance-october-2022",
-    page: 6,
-    name: "Entrepreneurial Challenges?",
-  },
-  {
-    date: "October 2022",
-    fileCore: "floral-finance-october-2022",
-    page: 7,
-    name: "Entrepreneurial Skills",
-  },
-  {
-    date: "October 2022",
-    fileCore: "floral-finance-october-2022",
-    page: 8,
-    name: "Inquiries & Answers: To Charge or Not to Charge",
-  },
-  {
-    date: "October 2022",
-    fileCore: "floral-finance-october-2022",
-    page: 8,
-    name: "Inquiries & Answers: Telephone Woes",
-  },
-  {
-    date: "October 2022",
-    fileCore: "floral-finance-october-2022",
-    page: 8,
-    name: "Norms: Holiday Season",
-  },
-  {
     date: "September 2022",
     fileCore: "floral-finance-september-2022",
     page: 2,
@@ -144,7 +96,7 @@ const articles = [
   },
   {
     date: "September 2022",
-    fileCore: "floral-finance-september-2022",
+    fileCore: "floral-finance-august-2022",
     page: 2,
     name: "How Much Can One Designer Handle? More Than You Might Think",
   },

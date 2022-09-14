@@ -128,13 +128,13 @@ const articles = [
     date: "October 2022",
     fileCore: "floral-finance-october-2022",
     page: 8,
-    name: "Inquiries & Answers: Telephone Woes",
+    name: "Inquiries & Answers: Telephone Wor",
   },
   {
     date: "October 2022",
     fileCore: "floral-finance-october-2022",
     page: 8,
-    name: "Norms: Holiday Season",
+    name: "Norms: Older Workers",
   },
   {
     date: "September 2022",
