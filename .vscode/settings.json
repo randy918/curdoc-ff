@@ -12,7 +12,8 @@
     "statusBarItem.hoverBackground": "#0c8b2a",
     "statusBarItem.remoteBackground": "#085c1c",
     "statusBarItem.remoteForeground": "#e7e7e7",
-    "tab.activeBorder": "#0c8b2a"
+    "tab.activeBorder": "#0c8b2a",
+    "commandCenter.border": "#e7e7e799"
 },
   "peacock.color": "#085c1c",
   "liveServer.settings.port": 5503

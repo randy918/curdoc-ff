@@ -135,8 +135,9 @@ const articles = [
     date: "November 2022",
     fileCore: "floral-finance-october-2022",
     page: 8,
-    name: "Norms: Number of Employees",
+    name: "Norms: Number of ",
   },
+  {
   {
     date: "October 2022",
     fileCore: "floral-finance-october-2022",

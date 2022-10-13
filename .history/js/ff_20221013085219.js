@@ -129,14 +129,15 @@ const articles = [
     date: "November 2022",
     fileCore: "floral-finance-october-2022",
     page: 8,
-    name: "Inquiries & Answers: Long-Distance Deliveries",
+    name: "Inquiries & Answers: Long-",
   },
   {
     date: "November 2022",
     fileCore: "floral-finance-october-2022",
     page: 8,
-    name: "Norms: Number of Employees",
+    name: "Norms: Holiday Season",
   },
+  {
   {
     date: "October 2022",
     fileCore: "floral-finance-october-2022",

@@ -1,6 +1,7 @@
 const ff = [
-  { downloadTitle: "floral-finance-november-2022" },
   { downloadTitle: "floral-finance-october-2022" },
+  { downloadTitle: "floral-finance-october-2022" },
+
   { downloadTitle: "floral-finance-september-2022" },
   { downloadTitle: "floral-finance-august-2022" },
   { downloadTitle: "floral-finance-july-2022" },
@@ -90,54 +91,6 @@ const ff = [
 
 const articles = [
   {
-    date: "November 2022",
-    fileCore: "floral-finance-october-2022",
-    page: 2,
-    name: "From the Publishers: Responsibility",
-  },
-  {
-    date: "November 2022",
-    fileCore: "floral-finance-october-2022",
-    page: 2,
-    name: "Paying Yourself: How? How Much?",
-  },
-  {
-    date: "November 2022",
-    fileCore: "floral-finance-october-2022",
-    page: 4,
-    name: "Your 2023 Payroll: Establishing a Budget",
-  },
-  {
-    date: "October 2022",
-    fileCore: "floral-finance-october-2022",
-    page: 6,
-    name: "Life Insurance Mistakes: Don't Let This Happen to You",
-  },
-  {
-    date: "November 2022",
-    fileCore: "floral-finance-october-2022",
-    page: 7,
-    name: "Simplify Year-End Inventory",
-  },
-  {
-    date: "November 2022",
-    fileCore: "floral-finance-october-2022",
-    page: 8,
-    name: "Inquiries & Answers: Pricing Weekly Specials",
-  },
-  {
-    date: "November 2022",
-    fileCore: "floral-finance-october-2022",
-    page: 8,
-    name: "Inquiries & Answers: Long-Distance Deliveries",
-  },
-  {
-    date: "November 2022",
-    fileCore: "floral-finance-october-2022",
-    page: 8,
-    name: "Norms: Number of Employees",
-  },
-  {
     date: "October 2022",
     fileCore: "floral-finance-october-2022",
     page: 2,
@@ -186,7 +139,6 @@ const articles = [
     name: "Norms: Holiday Season",
   },
   {
-
     date: "September 2022",
     fileCore: "floral-finance-september-2022",
     page: 2,

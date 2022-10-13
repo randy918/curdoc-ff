@@ -117,26 +117,27 @@ const articles = [
     date: "November 2022",
     fileCore: "floral-finance-october-2022",
     page: 7,
-    name: "Simplify Year-End Inventory",
+    name: "Life Insurance Mistakes: Don't Let This Happen to YOu",
   },
   {
     date: "November 2022",
     fileCore: "floral-finance-october-2022",
     page: 8,
-    name: "Inquiries & Answers: Pricing Weekly Specials",
+    name: "Inquiries & Answers: To Charge or Not to Charge",
   },
   {
     date: "November 2022",
     fileCore: "floral-finance-october-2022",
     page: 8,
-    name: "Inquiries & Answers: Long-Distance Deliveries",
+    name: "Inquiries & Answers: Telephone Woes",
   },
   {
     date: "November 2022",
     fileCore: "floral-finance-october-2022",
     page: 8,
-    name: "Norms: Number of Employees",
+    name: "Norms: Holiday Season",
   },
+  {
   {
     date: "October 2022",
     fileCore: "floral-finance-october-2022",
