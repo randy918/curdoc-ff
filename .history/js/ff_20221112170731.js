@@ -124,7 +124,7 @@ const articles = [
     date: "December 2022",
     fileCore: "floral-finance-october-2022",
     page: 8,
-    name: "Inquiries & Answers: Handling Old Inventory",
+    name: "Inquiries & Answers: Pricing Weekly Specials",
   },
   {
     date: "December 2022",

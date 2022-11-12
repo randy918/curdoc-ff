@@ -1,5 +1,5 @@
 const ff = [
-  { downloadTitle: "floral-finance-december-2022" },
+  { downloadTitle: "floral-finance-november-2022" },
   { downloadTitle: "floral-finance-november-2022" },
   { downloadTitle: "floral-finance-october-2022" },
   { downloadTitle: "floral-finance-september-2022" },
@@ -91,54 +91,6 @@ const ff = [
 
 const articles = [
   {
-    date: "December 2022",
-    fileCore: "floral-finance-october-2022",
-    page: 2,
-    name: "From the Publishers: Using a Consultant",
-  },
-  {
-    date: "December 2022",
-    fileCore: "floral-finance-october-2022",
-    page: 2,
-    name: "Protect Yourself: Plain Talk About Liability",
-  },
-  {
-    date: "December 2022",
-    fileCore: "floral-finance-october-2022",
-    page: 4,
-    name: "Are Four Locations Better Than One?: The More the Merrier?",
-  },
-  {
-    date: "December 2022",
-    fileCore: "floral-finance-october-2022",
-    page: 6,
-    name: "The Non-Compete Agreement: Is It a Good Idea?",
-  },
-  {
-    date: "December 2022",
-    fileCore: "floral-finance-october-2022",
-    page: 7,
-    name: "Organize Your Desk: A Simple, Workable System",
-  },
-  {
-    date: "December 2022",
-    fileCore: "floral-finance-october-2022",
-    page: 8,
-    name: "Inquiries & Answers: Handling Old Inventory",
-  },
-  {
-    date: "December 2022",
-    fileCore: "floral-finance-october-2022",
-    page: 8,
-    name: "Inquiries & Answers: Comp Time",
-  },
-  {
-    date: "November 2022",
-    fileCore: "floral-finance-october-2022",
-    page: 8,
-    name: "Norms: Forgotten Birthdays",
-  },
-  {
     date: "November 2022",
     fileCore: "floral-finance-october-2022",
     page: 2,
@@ -157,7 +109,7 @@ const articles = [
     name: "Your 2023 Payroll: Establishing a Budget",
   },
   {
-    date: "November 2022",
+    date: "October 2022",
     fileCore: "floral-finance-october-2022",
     page: 6,
     name: "Life Insurance Mistakes: Don't Let This Happen to You",
@@ -235,6 +187,7 @@ const articles = [
     name: "Norms: Holiday Season",
   },
   {
+
     date: "September 2022",
     fileCore: "floral-finance-september-2022",
     page: 2,
