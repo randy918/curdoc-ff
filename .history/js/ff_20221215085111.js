@@ -127,11 +127,11 @@ const articles = [
     page: 8,
     name: "Inquiries & Answers: Cost Control",
   },
-  {
-    date: "January 2022",
+    {
+    date: "December 2022",
     fileCore: "floral-finance-november-2022",
     page: 8,
-    name: "Norms: Survival",
+    name: "Norms: Forgotten Birthdays",
   },
   {
     date: "December 2022",

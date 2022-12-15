@@ -128,12 +128,6 @@ const articles = [
     name: "Inquiries & Answers: Cost Control",
   },
   {
-    date: "January 2022",
-    fileCore: "floral-finance-november-2022",
-    page: 8,
-    name: "Norms: Survival",
-  },
-  {
     date: "December 2022",
     fileCore: "floral-finance-december-2022",
     page: 2,
@@ -176,7 +170,7 @@ const articles = [
     name: "Inquiries & Answers: Comp Time",
   },
   {
-    date: "December 2022",
+    date: "November 2022",
     fileCore: "floral-finance-november-2022",
     page: 8,
     name: "Norms: Forgotten Birthdays",

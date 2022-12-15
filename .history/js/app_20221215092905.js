@@ -232,7 +232,7 @@ document.querySelector("#myRadio3").addEventListener("click", function () {
 
 document.querySelector("#myRadio12").addEventListener("click", function () {
   deleteSearchBar();
-  assembleCurrentYear(2023);
+  assembleCurrentYear(202);
 });
 
 document.querySelector("#myRadio4").addEventListener("click", function () {

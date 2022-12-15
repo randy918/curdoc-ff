@@ -230,9 +230,9 @@ document.querySelector("#myRadio3").addEventListener("click", function () {
   assembleCurrentYear(2022);
 });
 
-document.querySelector("#myRadio12").addEventListener("click", function () {
+document.querySelector("#myRadio3").addEventListener("click", function () {
   deleteSearchBar();
-  assembleCurrentYear(2023);
+  assembleCurrentYear(2022);
 });
 
 document.querySelector("#myRadio4").addEventListener("click", function () {

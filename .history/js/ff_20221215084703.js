@@ -93,45 +93,39 @@ const ff = [
 const articles = [
   {
     date: "January 2023",
-    fileCore: "floral-finance-january-2023",
+    fileCore: "floral-finance-december-2022",
     page: 2,
     name: "From the Publishers: Where Does the Money Go?",
   },
   {
     date: "January 2023",
-    fileCore: "floral-finance-january-2023",
+    fileCore: "floral-finance-december-2022",
     page: 2,
     name: "Building Traffic: Building Sales",
   },
   {
     date: "January 2023",
-    fileCore: "floral-finance-january-2023",
+    fileCore: "floral-finance-december-2022",
     page: 4,
     name: "2023 Shop Profile: The Great Turnaround",
   },
   {
     date: "January 2023",
-    fileCore: "floral-finance-january-2023",
+    fileCore: "floral-finance-december-2022",
     page: 7,
-    name: "Getting the Most From Your CPA",
+    name: "Getting the Most F",
   },
   {
     date: "January 2023",
-    fileCore: "floral-finance-january-2023",
+    fileCore: "floral-finance-december-2022",
     page: 8,
-    name: "Inquiries & Answers: Sympathy Business",
+    name: "Inquiries & Answers: Handling Old Inventory",
   },
   {
     date: "January 2023",
-    fileCore: "floral-finance-january-2023",
+    fileCore: "floral-finance-december-2022",
     page: 8,
-    name: "Inquiries & Answers: Cost Control",
-  },
-  {
-    date: "January 2022",
-    fileCore: "floral-finance-november-2022",
-    page: 8,
-    name: "Norms: Survival",
+    name: "Inquiries & Answers: Comp Time",
   },
   {
     date: "December 2022",
@@ -176,7 +170,7 @@ const articles = [
     name: "Inquiries & Answers: Comp Time",
   },
   {
-    date: "December 2022",
+    date: "November 2022",
     fileCore: "floral-finance-november-2022",
     page: 8,
     name: "Norms: Forgotten Birthdays",
