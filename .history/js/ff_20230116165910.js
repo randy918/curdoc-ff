@@ -1,6 +1,6 @@
 const ff = [
-    { downloadTitle: "floral-finance-February-2023" },
   { downloadTitle: "floral-finance-january-2023" },
+  { downloadTitle: "floral-finance-February-2023" },
   { downloadTitle: "floral-finance-december-2022" },
   { downloadTitle: "floral-finance-november-2022" },
   { downloadTitle: "floral-finance-october-2022" },
@@ -92,48 +92,6 @@ const ff = [
 ];
 
 const articles = [
-  {
-    date: "February 2023",
-    fileCore: "floral-finance-february-2023",
-    page: 2,
-    name: "From the Publishers: The Right Tool",
-  },
-  {
-    date: "February 2023",
-    fileCore: "floral-finance-february-2023",
-    page: 2,
-    name: "Daily Cash Control: Nipping Problems in the Bud",
-  },
-  {
-    date: "February 2023",
-    fileCore: "floral-finance-february-2023",
-    page: 4,
-    name: "How to Manage Right-Brained Designers: A Delicate Balance",
-  },
-  {
-    date: "February 2023",
-    fileCore: "floral-finance-february-2023",
-    page: 7,
-    name: "Discounting Dangers: Competing Creatively",
-  },
-  {
-    date: "February 2023",
-    fileCore: "floral-finance-february-2023",
-    page: 8,
-    name: "Inquiries & Answers: Teamwork",
-  },
-  {
-    date: "February 2023",
-    fileCore: "floral-finance-february-2023",
-    page: 8,
-    name: "Inquiries & Answers: Training Pays Off",
-  },
-  {
-    date: "February 2022",
-    fileCore: "floral-finance-november-2022",
-    page: 8,
-    name: "Norms: Mileage Rate",
-  },
   {
     date: "January 2023",
     fileCore: "floral-finance-january-2023",
