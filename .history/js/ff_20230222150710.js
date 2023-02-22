@@ -95,49 +95,50 @@ const ff = [
 const articles = [
 	{
 		date: "March 2023",
-		fileCore: "floral-finance-march-2023",
+		fileCore: "floral-finance-february-2023",
 		page: 2,
 		name: "From the Publishers: Your Number-One Fans",
 	},
 	{
 		date: "March 2023",
-		fileCore: "floral-finance-march-2023",
+		fileCore: "floral-finance-february-2023",
 		page: 2,
 		name: "Hiring in a Low-Wage Industry: Are There Any Secrets?",
 	},
 	{
 		date: "March 2023",
-		fileCore: "floral-finance-march-2023",
+		fileCore: "floral-finance-february-2023",
 		page: 4,
 		name: "Your Income Statements: Are You Getting What You're Paying For?",
 	},
 	{
 		date: "March 2023",
-		fileCore: "floral-finance-march-2023",
-		page: 6,
-		name: "Succession Series #2: The Prior Questions",
-	},
-	{
-		date: "March 2023",
-		fileCore: "floral-finance-march-2023",
+		fileCore: "floral-finance-february-2023",
 		page: 7,
-		name: "By the Books: Payroll: Weekly, Biweekly or Semimonthly?",
+		name: "Discounting Dangers: Competing Creatively",
+	},
+	{
+	{
+		date: "March 2023",
+		fileCore: "floral-finance-february-2023",
+		page: 7,
+		name: "By the Books: Payroll",
 	},
 	{
 		date: "March 2023",
-		fileCore: "floral-finance-march-2023",
+		fileCore: "floral-finance-february-2023",
 		page: 8,
 		name: "Inquiries & Answers: Charitable Deductions",
 	},
 	{
 		date: "March 2023",
-		fileCore: "floral-finance-march-2023",
+		fileCore: "floral-finance-february-2023",
 		page: 8,
 		name: "Inquiries & Answers: To Cash or Not",
 	},
 	{
 		date: "March 2023",
-		fileCore: "floral-finance-march-2022",
+		fileCore: "floral-finance-november-2022",
 		page: 8,
 		name: "Norms: People Per Shop",
 	},
@@ -179,7 +180,7 @@ const articles = [
 	},
 	{
 		date: "February 2023",
-		fileCore: "floral-finance-february-2022",
+		fileCore: "floral-finance-november-2022",
 		page: 8,
 		name: "Norms: Mileage Rate",
 	},
@@ -220,8 +221,8 @@ const articles = [
 		name: "Inquiries & Answers: Cost Control",
 	},
 	{
-		date: "January 2023",
-		fileCore: "floral-finance-january-2023",
+		date: "January 2022",
+		fileCore: "floral-finance-november-2022",
 		page: 8,
 		name: "Norms: Survival",
 	},
@@ -269,7 +270,7 @@ const articles = [
 	},
 	{
 		date: "December 2022",
-		fileCore: "floral-finance-december-2022",
+		fileCore: "floral-finance-november-2022",
 		page: 8,
 		name: "Norms: Forgotten Birthdays",
 	},

@@ -269,7 +269,7 @@ const articles = [
 	},
 	{
 		date: "December 2022",
-		fileCore: "floral-finance-december-2022",
+		fileCore: "floral-finance-november-2022",
 		page: 8,
 		name: "Norms: Forgotten Birthdays",
 	},
