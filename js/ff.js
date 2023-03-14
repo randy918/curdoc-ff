@@ -1,4 +1,5 @@
 const ff = [
+	{ downloadTitle: "floral-finance-april-2023" },
 	{ downloadTitle: "floral-finance-march-2023" },
 	{ downloadTitle: "floral-finance-february-2023" },
 	{ downloadTitle: "floral-finance-january-2023" },
@@ -93,6 +94,54 @@ const ff = [
 ];
 
 const articles = [
+	{
+		date: "April 2023",
+		fileCore: "floral-finance-april-2023",
+		page: 2,
+		name: "From the Publishers: Who's On First?",
+	},
+	{
+		date: "April 2023",
+		fileCore: "floral-finance-april-2023",
+		page: 2,
+		name: "How Important Are Wire Orders? And Are They Profitable?",
+	},
+	{
+		date: "April 2023",
+		fileCore: "floral-finance-april-2023",
+		page: 4,
+		name: "Summer Shop Hours: Do You Ever Turn Away Business?",
+	},
+	{
+		date: "April 2023",
+		fileCore: "floral-finance-april-2023",
+		page: 6,
+		name: "Succession Series #3: What Are Your Goals?",
+	},
+	{
+		date: "April 2023",
+		fileCore: "floral-finance-april-2023",
+		page: 7,
+		name: "By the Books: Stop Embezzlement—Employing Thieves?",
+	},
+	{
+		date: "April 2023",
+		fileCore: "floral-finance-april-2023",
+		page: 8,
+		name: "Inquiries & Answers: Credit Cards",
+	},
+	{
+		date: "April 2023",
+		fileCore: "floral-finance-april-2023",
+		page: 8,
+		name: "Inquiries & Answers: Shoplifting",
+	},
+	{
+		date: "April 2023",
+		fileCore: "floral-finance-april-2022",
+		page: 8,
+		name: "Norms: Shop Closings",
+	},
 	{
 		date: "March 2023",
 		fileCore: "floral-finance-march-2023",
