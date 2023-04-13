@@ -1,4 +1,5 @@
 const ff = [
+	{ downloadTitle: "floral-finance-may-2023" },
 	{ downloadTitle: "floral-finance-april-2023" },
 	{ downloadTitle: "floral-finance-march-2023" },
 	{ downloadTitle: "floral-finance-february-2023" },
@@ -94,6 +95,54 @@ const ff = [
 ];
 
 const articles = [
+	{
+		date: "May 2023",
+		fileCore: "floral-finance-may-2023",
+		page: 2,
+		name: "From the Publishers: Mistakes Are Good for You",
+	},
+	{
+		date: "May 2023",
+		fileCore: "floral-finance-may-2023",
+		page: 2,
+		name: "Competing in a Low-Growth Market: Success Is Possible",
+	},
+	{
+		date: "May 2023",
+		fileCore: "floral-finance-may-2023",
+		page: 4,
+		name: "Shop Profile: Tough Choices—Back From the Dead",
+	},
+	{
+		date: "May 2023",
+		fileCore: "floral-finance-may-2023",
+		page: 6,
+		name: "Succession Series #4: Key Issues in Succession Planning",
+	},
+	{
+		date: "May 2023",
+		fileCore: "floral-finance-may-2023",
+		page: 7,
+		name: "By the Books: Handling an Audit—Keep Your Cool",
+	},
+	{
+		date: "May 2023",
+		fileCore: "floral-finance-may-2023",
+		page: 8,
+		name: "Inquiries & Answers: Meeting Expenses",
+	},
+	{
+		date: "May 2023",
+		fileCore: "floral-finance-may-2023",
+		page: 8,
+		name: "Inquiries & Answers: Delivery Vehicles",
+	},
+	{
+		date: "May 2023",
+		fileCore: "floral-finance-may-2022",
+		page: 8,
+		name: "Norms: Internet Use",
+	},
 	{
 		date: "April 2023",
 		fileCore: "floral-finance-april-2023",
