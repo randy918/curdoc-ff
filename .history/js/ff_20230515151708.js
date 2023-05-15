@@ -124,7 +124,7 @@ const articles = [
 		date: "June 2023",
 		fileCore: "floral-finance-june-2023",
 		page: 7,
-		name: "By the Books: Projecting Summer Cash Flow",
+		name: "By the Books: Projecting",
 	},
 	{
 		date: "June 2023",
@@ -136,13 +136,13 @@ const articles = [
 		date: "June 2023",
 		fileCore: "floral-finance-june-2023",
 		page: 8,
-		name: "Inquiries & Answers: Contributions",
+		name: "Inquiries & Answers: Delivery Vehicles",
 	},
 	{
 		date: "June 2023",
 		fileCore: "floral-finance-june-2022",
 		page: 8,
-		name: "Norms: Pricing Multiple Deliveries",
+		name: "Norms: Internet Use",
 	},
 	{
 		date: "May 2023",

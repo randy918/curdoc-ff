@@ -97,54 +97,6 @@ const ff = [
 
 const articles = [
 	{
-		date: "June 2023",
-		fileCore: "floral-finance-june-2023",
-		page: 2,
-		name: "From the Publishers: Reduce Waste",
-	},
-	{
-		date: "June 2023",
-		fileCore: "floral-finance-june-2023",
-		page: 2,
-		name: "Evening Deliveries: Making Money Day & Night",
-	},
-	{
-		date: "June 2023",
-		fileCore: "floral-finance-june-2023",
-		page: 4,
-		name: "Owning Your Own Business: The Truths behind the Myths",
-	},
-	{
-		date: "June 2023",
-		fileCore: "floral-finance-june-2023",
-		page: 6,
-		name: "Succession Series #5: The Business Issues",
-	},
-	{
-		date: "June 2023",
-		fileCore: "floral-finance-june-2023",
-		page: 7,
-		name: "By the Books: Projecting Summer Cash Flow",
-	},
-	{
-		date: "June 2023",
-		fileCore: "floral-finance-june-2023",
-		page: 8,
-		name: "Inquiries & Answers: Meeting Expenses",
-	},
-	{
-		date: "June 2023",
-		fileCore: "floral-finance-june-2023",
-		page: 8,
-		name: "Inquiries & Answers: Contributions",
-	},
-	{
-		date: "June 2023",
-		fileCore: "floral-finance-june-2022",
-		page: 8,
-		name: "Norms: Pricing Multiple Deliveries",
-	},
-	{
 		date: "May 2023",
 		fileCore: "floral-finance-may-2023",
 		page: 2,

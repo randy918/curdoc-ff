@@ -142,7 +142,7 @@ const articles = [
 		date: "June 2023",
 		fileCore: "floral-finance-june-2022",
 		page: 8,
-		name: "Norms: Pricing Multiple Deliveries",
+		name: "Norms: Internet Use",
 	},
 	{
 		date: "May 2023",

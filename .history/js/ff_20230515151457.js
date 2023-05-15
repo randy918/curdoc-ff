@@ -112,19 +112,19 @@ const articles = [
 		date: "June 2023",
 		fileCore: "floral-finance-june-2023",
 		page: 4,
-		name: "Owning Your Own Business: The Truths behind the Myths",
+		name: "O",
 	},
 	{
 		date: "June 2023",
 		fileCore: "floral-finance-june-2023",
 		page: 6,
-		name: "Succession Series #5: The Business Issues",
+		name: "Succession Series #4: Key Issues in Succession Planning",
 	},
 	{
 		date: "June 2023",
 		fileCore: "floral-finance-june-2023",
 		page: 7,
-		name: "By the Books: Projecting Summer Cash Flow",
+		name: "By the Books: Handling an Audit—Keep Your Cool",
 	},
 	{
 		date: "June 2023",
@@ -136,13 +136,13 @@ const articles = [
 		date: "June 2023",
 		fileCore: "floral-finance-june-2023",
 		page: 8,
-		name: "Inquiries & Answers: Contributions",
+		name: "Inquiries & Answers: Delivery Vehicles",
 	},
 	{
 		date: "June 2023",
 		fileCore: "floral-finance-june-2022",
 		page: 8,
-		name: "Norms: Pricing Multiple Deliveries",
+		name: "Norms: Internet Use",
 	},
 	{
 		date: "May 2023",
