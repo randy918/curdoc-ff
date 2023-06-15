@@ -131,19 +131,19 @@ const articles = [
 		date: "July 2023",
 		fileCore: "floral-finance-july-2023",
 		page: 8,
-		name: "Inquiries & Answers: Direct Mail",
+		name: "Inquiries & Answers: Meeting Expenses",
 	},
 	{
 		date: "July 2023",
 		fileCore: "floral-finance-july-2023",
 		page: 8,
-		name: "Inquiries & Answers: In Balance",
+		name: "Inquiries & Answers: Contributions",
 	},
 	{
 		date: "July 2023",
 		fileCore: "floral-finance-july-2022",
 		page: 8,
-		name: "Norms: Facilities Costs",
+		name: "Norms: Pricing Multiple Deliveries",
 	},
 	{
 		date: "June 2023",

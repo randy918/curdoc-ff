@@ -137,7 +137,7 @@ const articles = [
 		date: "July 2023",
 		fileCore: "floral-finance-july-2023",
 		page: 8,
-		name: "Inquiries & Answers: In Balance",
+		name: "Inquiries & Answers: Contributions",
 	},
 	{
 		date: "July 2023",

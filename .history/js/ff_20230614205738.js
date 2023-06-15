@@ -98,54 +98,6 @@ const ff = [
 
 const articles = [
 	{
-		date: "July 2023",
-		fileCore: "floral-finance-july-2023",
-		page: 2,
-		name: "From the Publishers: Guilt By Association",
-	},
-	{
-		date: "July 2023",
-		fileCore: "floral-finance-july-2023",
-		page: 2,
-		name: "Keeping Your Books: What's Necessary? What's Nice?",
-	},
-	{
-		date: "July 2023",
-		fileCore: "floral-finance-july-2023",
-		page: 4,
-		name: "Setting Flower Prices: What About Seasonal Fluctuations?",
-	},
-	{
-		date: "July 2023",
-		fileCore: "floral-finance-july-2023",
-		page: 6,
-		name: "Succession Series #6: Training the Heirs",
-	},
-	{
-		date: "July 2023",
-		fileCore: "floral-finance-july-2023",
-		page: 7,
-		name: "By the Books: Handling an Audit—Keep Your Cool",
-	},
-	{
-		date: "July 2023",
-		fileCore: "floral-finance-july-2023",
-		page: 8,
-		name: "Inquiries & Answers: Direct Mail",
-	},
-	{
-		date: "July 2023",
-		fileCore: "floral-finance-july-2023",
-		page: 8,
-		name: "Inquiries & Answers: In Balance",
-	},
-	{
-		date: "July 2023",
-		fileCore: "floral-finance-july-2022",
-		page: 8,
-		name: "Norms: Facilities Costs",
-	},
-	{
 		date: "June 2023",
 		fileCore: "floral-finance-june-2023",
 		page: 2,
